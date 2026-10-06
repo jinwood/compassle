@@ -78,6 +78,8 @@ function finish(fresh) {
     store.results[num] = res.map(({ title, gx, gy, ax, ay, d, pts, b }) => ({ title, gx, gy, ax, ay, d, pts, b }));
     store.stats = recordDaily(store.stats, num, total);
     store.progress = null;
+    // anonymous count of finished dailies: puzzle number and scores only, no identifier
+    try { navigator.sendBeacon("/api/finish", JSON.stringify({ day: num, total, cards: res.map(r => ({ t: r.title, p: r.pts })) })); } catch (_) {}
     save();
   }
   $("#tot").textContent = total;

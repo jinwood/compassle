@@ -9,6 +9,7 @@ A daily placement game. Static site, no build step, no backend.
 - Eight more idea cards come from the Manifesto Project (MPDS 2026a) via `scripts/build_manifesto_cards.py`. Those data files stay in `data-src/` and are not redistributed (see their terms of use). Cite: Lehmann, Pola et al. (2026), Manifesto Project Dataset 2026a.
 - `scripts/build_puzzles.py` packs all idea cards into daily sets.
 - Icons are from [Lucide](https://lucide.dev) (ISC licence), stored in `public/data/icons.json`. `scripts/icons_map.json` maps each idea to an icon.
+- `functions/api/finish.js` is a Pages Function that counts finished games into D1 (`schema.sql`). Setup is in `LAUNCH.md`.
 - Progress and streaks live in the browser's localStorage. A service worker makes it work offline and installable.
 
 ## Run locally

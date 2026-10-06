@@ -24,6 +24,25 @@ Status key: **[done]** finished, **[you]** needs you, **[open]** not started or 
 6. **A way to report problems** **[done]**
    The footer links "Disagree with a placement?" to GitHub Issues, and the about page does too. Switch it to an email address if you prefer.
 
+## Analytics (finished-game counter)
+
+The game sends one anonymous record when a daily is finished: puzzle number, total, and the score on each idea. No IP, cookie or ID is stored. It goes to `functions/api/finish.js`, a Cloudflare Pages Function, and is stored in a D1 database. The about page describes this. **[you: one-off setup, the code is done]**
+
+1. Create the database: Cloudflare dashboard > Storage & Databases > D1 > Create, name it `compassle`. Open its **Console** tab and run the contents of `schema.sql`.
+2. Bind it: Workers & Pages > your project > Settings > Bindings (or Functions) > Add > D1 database. Variable name must be exactly `DB`, database `compassle`. Add it for both Production and Preview.
+3. Redeploy (push a commit, or Deployments > Retry). Finish a puzzle on the live site, then in the D1 console run `SELECT COUNT(DISTINCT play) FROM scores;` to confirm a row arrived.
+4. Optional but recommended: a rate-limit rule on `/api/finish` (Security > WAF > Rate limiting rules, e.g. 20 requests per minute per IP). The endpoint validates its input, but anyone could still flood it with fake scores.
+5. Optional: turn on Cloudflare **Web Analytics** (project > Metrics) for visitors, referrers and countries. If you do, change the about page's "no cookies" line to mention aggregate, cookie-free analytics.
+
+Useful queries (D1 console):
+
+    -- games finished per puzzle day, with average total
+    SELECT day, COUNT(DISTINCT play) AS games, ROUND(AVG(total)) AS avg_total FROM scores GROUP BY day ORDER BY day;
+    -- hardest ideas
+    SELECT title, COUNT(*) AS n, ROUND(AVG(pts)) AS avg_pts FROM scores GROUP BY title HAVING n >= 20 ORDER BY avg_pts LIMIT 10;
+
+Not done: a way to show "average score today" in the game. The data supports it if you want it later. Without a database binding the endpoint answers 503 and the game carries on as normal. Untested on real Cloudflare: I tested the function against a mock database and the game in a headless browser, but not on Pages itself.
+
 ## Worth deciding
 
 - **Day rollover uses each player's local date.** Someone in Sydney gets tomorrow's puzzle hours before someone in Los Angeles, and share-text numbers can differ across timezones. Switching to UTC keeps everyone in sync, but the puzzle then flips at an odd local time for some players. Small change: `todayStr()` in `public/js/game.js`. **[open]**
