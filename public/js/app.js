@@ -94,7 +94,7 @@ function finish(fresh) {
     const g = document.createElement("div"); g.className = "pin you"; g.textContent = k + 1; put(g, r.gx, r.gy); mini.appendChild(g);
   });
   $("#minisvg").innerHTML = lines;
-  $("#share").textContent = shareText(daily ? "#" + num : "(random set)", res);
+  $("#share").textContent = shareText(daily ? "#" + num : "(preview)", res);
   renderStats();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -117,7 +117,7 @@ function start(c, isDaily) {
   bars.forEach(b => delete b.dataset.c);
   $("#end").style.display = "none"; $("#end").hidden = true; $("#copy").textContent = "Copy result";
   $("#play").style.display = "contents";
-  $("#meta").innerHTML = isDaily ? "DAILY #" + num + "<br>" + new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric" }).replace(/,/g, "").toUpperCase() : "RANDOM SET<br>PRACTICE";
+  $("#meta").innerHTML = isDaily ? "DAILY #" + num + "<br>" + new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric" }).replace(/,/g, "").toUpperCase() : "PREVIEW";
   loadCard();
 }
 
@@ -132,12 +132,6 @@ $("#copy").addEventListener("click", () => {
     const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected. Copy it manually";
   };
   try { navigator.clipboard.writeText(t).then(() => { btn.textContent = "Copied"; }, fallback); } catch (_) { fallback(); }
-});
-$("#again").addEventListener("click", () => {
-  const all = puzzles.days.flat().slice();
-  for (let k = all.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [all[k], all[j]] = [all[j], all[k]]; }
-  start(all.slice(0, 5), false);
-  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 (async function init() {

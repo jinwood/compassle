@@ -5,7 +5,7 @@ Status key: **[done]** finished, **[you]** needs you, **[open]** not started or 
 ## Before launch
 
 1. **Test the full flow in a real browser, including on a phone** **[done]**
-   A headless Chromium run (mobile 390px and desktop 1280px, dark and light) played a full round and checked: placing, locking, reveal, results, copy to clipboard, the record panel, export and import (valid and invalid files), reload restoring a finished game, resuming mid-game, a random set, the about page, offline use after a first visit, and no console or network errors. All 37 checks pass. The test is a one-off script, not in the repo. Still worth a real play on a real phone.
+   A headless Chromium run (mobile 390px and desktop 1280px, dark and light) played a full round and checked: placing, locking, reveal, results, copy to clipboard, the record panel, export and import (valid and invalid files), reload restoring a finished game, resuming mid-game the about page, offline use after a first visit, and no console or network errors. All 37 checks pass. The test is a one-off script, not in the repo. Still worth a real play on a real phone.
 
 2. **Confirm the data terms** **[you]**
    - **CHES:** the site shows no licence. Email them (draft below) and wait for a reply.
