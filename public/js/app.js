@@ -153,6 +153,7 @@ $("#copy").addEventListener("click", () => {
   }
   const cs = puzzleFor(puzzles.days, num);
   start(cs, true);
+  showIntroIfNew();
   if (store.results[num]) { res = store.results[num]; finish(false); }
   else if (store.progress && store.progress.num === num && store.progress.res.length) {
     res = store.progress.res; i = res.length;
@@ -204,3 +205,14 @@ $("#dreset").addEventListener("click", () => {
   if (!confirm("Delete all saved scores and streaks on this device?")) return;
   store = { results: {}, stats: {}, progress: null }; save(); $("#dbody").innerHTML = renderRecord(); $("#dnote").textContent = "Reset. Reload to start today's puzzle afresh.";
 });
+
+// ---- First-visit intro ----
+const how = $("#how");
+const SEEN = "wdis:seen";
+const seen = () => { try { return !!localStorage.getItem(SEEN); } catch (_) { return true; } };
+const markSeen = () => { try { localStorage.setItem(SEEN, "1"); } catch (_) {} };
+how.addEventListener("close", markSeen);
+how.addEventListener("click", e => { if (e.target === how) how.close(); });
+$("#howgo").addEventListener("click", () => how.close());
+$("#howBtn").addEventListener("click", () => how.showModal());
+function showIntroIfNew() { if (!seen() && !Object.keys(store.results).length && !store.progress) how.showModal(); }

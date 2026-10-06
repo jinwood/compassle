@@ -81,9 +81,22 @@
     <div class="nextin" id="nextin"></div>
   </section>
   <footer class="foot2">
-    <a href="/about.html">About and sources</a> · <a href="https://github.com/jinwood/compassle/issues" rel="noopener">Disagree with a placement?</a>
+    <button class="linkbtn" id="howBtn" type="button">How to play</button> · <a href="/about.html">About and sources</a> · <a href="https://github.com/jinwood/compassle/issues" rel="noopener">Disagree with a placement?</a>
   </footer>
 </main>
+<dialog id="how" aria-label="How to play">
+  <div class="dhead"><h3>How to play</h3></div>
+  <div class="prose">
+    <p><strong>Five political ideas a day.</strong> Place each one where you think it sits on the grid, then lock it in.</p>
+    <ul>
+      <li><strong>Left to right is economics.</strong> Sharing wealth and public ownership sit on the left. Free markets and low taxes sit on the right.</li>
+      <li><strong>Top to bottom is personal freedom.</strong> Strong state control sits at the top. Individual liberty sits at the bottom.</li>
+      <li><strong>Closer scores higher.</strong> Up to 100 points per idea, 500 for a perfect day.</li>
+    </ul>
+    <p class="cite">The reference positions come from academic data on political parties, not opinion. <a href="/about.html">How it works</a></p>
+  </div>
+  <div class="dfoot"><button id="howgo" type="button" autofocus>Start</button></div>
+</dialog>
 <dialog id="dlg" aria-label="Your record">
   <div class="dhead"><h3>Your record</h3><button class="ghost" id="dclose" type="button">Close</button></div>
   <div id="dbody"></div>
