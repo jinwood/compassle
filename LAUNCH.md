@@ -19,7 +19,7 @@ Status key: **[done]** finished, **[you]** needs you, **[open]** not started or 
    Google Fonts is gone. The three font families are in `public/fonts/` (latin subset, woff2) and `public/css/fonts.css`. No request goes to Google.
 
 5. **Share preview and favicon** **[done, one follow-up for you]**
-   `public/og.png` (1200x630) plus Open Graph and Twitter tags, and a new compass-needle favicon. **Follow-up:** crawlers want an absolute image URL. Once you have the domain, change `og:image` and `twitter:image` in `public/index.html` from `/og.png` to `https://YOURDOMAIN/og.png`.
+   `public/og.png` (1200x630) plus Open Graph and Twitter tags, and a new compass-needle favicon. **Follow-up:** crawlers want an absolute image URL. Once you have the domain, `og:image`, `twitter:image`, `og:url` and the canonical link in `public/index.html` now use https://compassle.fun. [done]
 
 6. **A way to report problems** **[done]**
    The footer links "Disagree with a placement?" to GitHub Issues, and the about page does too. Switch it to an email address if you prefer.
