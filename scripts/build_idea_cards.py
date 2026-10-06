@@ -77,6 +77,6 @@ for title, desc, var, end, *sc in IDEAS:
     y = sum(wi * (float(r["galtan"]) - 5) * 20 for wi, (s, r) in zip(w, pick)) / sum(w)
     n, k = len(pick), len({r["country"] for s, r in pick})
     out.append({"tag": "Idea", "title": title, "desc": desc, "x": round(x), "y": round(y),
-      "note": "Estimated from the %d European parties (in %d countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide." % (n, k),
-      "source": SOURCE})
+      "note": "",
+      "source": "%s \u00b7 %d parties in %d countries" % (SOURCE, n, k)})
 json.dump(out, sys.stdout, indent=1, ensure_ascii=False)

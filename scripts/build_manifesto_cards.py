@@ -79,6 +79,6 @@ for title, desc, cats in IDEAS:
     x = sum(t[0] * t[1]["X"] for t in pick) / w; y = sum(t[0] * t[1]["Y"] for t in pick) / w
     n, c = len(pick), len({t[1]["country"] for t in pick})
     out.append({"tag": "Idea", "title": title, "desc": desc, "x": max(-100, min(100, round(x))), "y": max(-100, min(100, round(y))),
-      "note": "Estimated from %d party manifestos (in %d countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide." % (n, c),
-      "source": SOURCE})
+      "note": "",
+      "source": "%s \u00b7 %d manifestos in %d countries" % (SOURCE, n, c)})
 json.dump(out, sys.stdout, indent=1, ensure_ascii=False)

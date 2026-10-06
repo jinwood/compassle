@@ -8,8 +8,8 @@
     "desc": "Key industries and utilities owned by the state.",
     "x": -22,
     "y": 4,
-    "note": "Estimated from 360 party manifestos (in 58 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Putting industry in public hands is a left-wing idea. It says little about personal freedom, so it sits at the centre line.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 58 countries",
     "icon": "warehouse"
    },
    {
@@ -18,8 +18,8 @@
     "desc": "Removing government rules on how businesses operate.",
     "x": 55,
     "y": 9,
-    "note": "Estimated from the 24 European parties (in 18 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Cutting red tape is a favourite of the economic right. It says little about personal freedom, so it stays close to the middle vertically.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 24 parties in 18 countries",
     "icon": "unlock"
    },
    {
@@ -28,8 +28,8 @@
     "desc": "People look after themselves, with less redistribution by the state.",
     "x": 65,
     "y": 32,
-    "note": "Estimated from the 13 European parties (in 10 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Expecting people to look after themselves is the mirror image of redistribution. It sits well to the right, with a mild authoritarian tilt.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 13 parties in 10 countries",
     "icon": "footprints"
    },
    {
@@ -38,8 +38,8 @@
     "desc": "Religion kept out of law and public policy.",
     "x": -23,
     "y": -40,
-    "note": "Estimated from the 87 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Keeping religion out of lawmaking is backed by liberal parties, mostly centre-left.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 87 parties in 27 countries",
     "icon": "landmark"
    },
    {
@@ -48,8 +48,8 @@
     "desc": "Making the clean-up of politics a top priority.",
     "x": -4,
     "y": -19,
-    "note": "Estimated from the 32 European parties (in 13 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Almost every party says it wants a cleaner politics, so this lands close to the middle.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 32 parties in 13 countries",
     "icon": "search"
    }
   ],
@@ -60,8 +60,8 @@
     "desc": "Equal pay, parental leave and similar policies.",
     "x": -32,
     "y": -56,
-    "note": "Estimated from the 68 European parties (in 24 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Equal pay and parental leave are championed mostly by left-leaning, socially liberal parties.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 68 parties in 24 countries",
     "icon": "venus"
    },
    {
@@ -70,8 +70,8 @@
     "desc": "Taxing and transferring from richer to poorer people to narrow inequality.",
     "x": -67,
     "y": -43,
-    "note": "Estimated from the 33 European parties (in 20 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Taking from the wealthy to help everyone else is the classic left-wing idea. The parties behind it also tend to be socially liberal, so it sits low as well as far left.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 33 parties in 20 countries",
     "icon": "hand-coins"
    },
    {
@@ -80,8 +80,8 @@
     "desc": "Protecting nature even at some cost to economic growth.",
     "x": -42,
     "y": -65,
-    "note": "Estimated from the 37 European parties (in 21 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Protecting nature even at some economic cost is a left and liberal position, and Green parties lead on it.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 37 parties in 21 countries",
     "icon": "trees"
    },
    {
@@ -90,8 +90,8 @@
     "desc": "Newcomers are expected to adopt the majority culture.",
     "x": 23,
     "y": 72,
-    "note": "Estimated from the 69 European parties (in 30 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Expecting newcomers to adopt the local culture is backed mostly by authoritarian parties, with a mild lean to the right.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 69 parties in 30 countries",
     "icon": "merge"
    },
    {
@@ -100,8 +100,8 @@
     "desc": "Policy that puts the countryside ahead of cities.",
     "x": 18,
     "y": 62,
-    "note": "Estimated from the 23 European parties (in 14 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Putting the countryside first is mostly a traditional, authoritarian position, with a small lean right.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 23 parties in 14 countries",
     "icon": "tractor"
    }
   ],
@@ -112,8 +112,8 @@
     "desc": "Support for organised labour and workers' collective rights.",
     "x": -27,
     "y": -5,
-    "note": "Estimated from 360 party manifestos (in 55 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Backing for organised labour is a left-wing idea that sits about level on personal freedom.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 55 countries",
     "icon": "hammer"
    },
    {
@@ -122,8 +122,8 @@
     "desc": "Policy that puts cities ahead of the countryside.",
     "x": 11,
     "y": -64,
-    "note": "Estimated from the 15 European parties (in 8 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Putting cities first is a liberal position, with a mild lean to the right.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 15 parties in 8 countries",
     "icon": "building-2"
    },
    {
@@ -132,8 +132,8 @@
     "desc": "Leaders can act without heavy constraint.",
     "x": 4,
     "y": 69,
-    "note": "Estimated from the 34 European parties (in 16 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Letting leaders act without heavy constraint is authoritarian at heart, and it appeals to parties across the economic spectrum.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 34 parties in 16 countries",
     "icon": "crown"
    },
    {
@@ -142,8 +142,8 @@
     "desc": "Personal freedom, civil rights and the rule of law.",
     "x": 6,
     "y": -34,
-    "note": "Estimated from 360 party manifestos (in 49 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Parties that talk most about human rights are liberal, with almost no economic lean.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 49 countries",
     "icon": "bird"
    },
    {
@@ -152,8 +152,8 @@
     "desc": "Easy rules for people to move to and settle in a country.",
     "x": -64,
     "y": -66,
-    "note": "Estimated from the 17 European parties (in 12 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Open-door parties lean left and are strongly liberal on personal freedom. It's one of the clearest low-and-left ideas.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 17 parties in 12 countries",
     "icon": "door-open"
    }
   ],
@@ -164,8 +164,8 @@
     "desc": "Goods, services, capital and workers move freely between member countries.",
     "x": 18,
     "y": -9,
-    "note": "Estimated from the 90 European parties (in 26 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Letting goods, services and workers move freely appeals to the centre and centre-right, with a lean liberal.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 90 parties in 26 countries",
     "icon": "plane"
    },
    {
@@ -174,8 +174,8 @@
     "desc": "Legal marriage for couples of the same sex.",
     "x": -20,
     "y": -48,
-    "note": "Estimated from the 100 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Like wider LGBTQ+ rights, this is a socially liberal idea with only a mild economic lean.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 100 parties in 27 countries",
     "icon": "heart-handshake"
    },
    {
@@ -184,8 +184,8 @@
     "desc": "Courts that governments cannot direct.",
     "x": -6,
     "y": -27,
-    "note": "Estimated from the 130 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Almost every party says it backs independent courts, so this sits near the middle, leaning a little liberal.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 130 parties in 27 countries",
     "icon": "shield-check"
    },
    {
@@ -194,8 +194,8 @@
     "desc": "Countries take back powers from shared bodies.",
     "x": 15,
     "y": 63,
-    "note": "Estimated from the 35 European parties (in 20 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Taking powers back from shared bodies is backed by nationalist, authoritarian parties, mostly a bit right of centre.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 35 parties in 20 countries",
     "icon": "log-out"
    },
    {
@@ -204,8 +204,8 @@
     "desc": "Checks and balances that constrain those in power.",
     "x": -37,
     "y": -59,
-    "note": "Estimated from the 19 European parties (in 12 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Checks and balances are favoured by liberal parties, more often on the left.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 19 parties in 12 countries",
     "icon": "scale"
    }
   ],
@@ -216,8 +216,8 @@
     "desc": "National identity and sovereignty come first.",
     "x": 19,
     "y": 75,
-    "note": "Estimated from the 60 European parties (in 28 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Putting the nation first is the signature of authoritarian parties, most of whom lean right on economics.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 60 parties in 28 countries",
     "icon": "flag"
    },
    {
@@ -226,8 +226,8 @@
     "desc": "Legal protection and equal treatment for LGBTQ+ people.",
     "x": -25,
     "y": -56,
-    "note": "Estimated from the 80 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Backed by socially liberal parties, mostly on the centre-left, so it sits low and a little left.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 80 parties in 27 countries",
     "icon": "rainbow"
    },
    {
@@ -236,8 +236,8 @@
     "desc": "Fairer outcomes and treatment for all groups in society.",
     "x": -22,
     "y": -19,
-    "note": "Estimated from 360 party manifestos (in 50 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Parties that talk about fairness and equal treatment lean left and liberal.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 50 countries",
     "icon": "equal"
    },
    {
@@ -246,8 +246,8 @@
     "desc": "Spending more on public services in preference to cutting taxes.",
     "x": -62,
     "y": -56,
-    "note": "Estimated from the 42 European parties (in 22 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Parties that put hospitals and schools ahead of tax cuts sit well to the left, and most are socially liberal too.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 42 parties in 22 countries",
     "icon": "hospital"
    },
    {
@@ -256,8 +256,8 @@
     "desc": "Strong limits on state power, even if it makes fighting crime harder.",
     "x": -33,
     "y": -63,
-    "note": "Estimated from the 40 European parties (in 20 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Putting freedoms ahead of security is a libertarian instinct. It leans left because left-wing parties are the ones leading on it today.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 40 parties in 20 countries",
     "icon": "lock-open"
    }
   ],
@@ -268,8 +268,8 @@
     "desc": "Tight caps and controls on how many people may enter.",
     "x": 22,
     "y": 69,
-    "note": "Estimated from the 70 European parties (in 30 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "The parties pushing hardest for limits are strongly authoritarian, but they come from both sides on the economy. So it sits high up and only slightly right.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 70 parties in 30 countries",
     "icon": "door-closed"
    },
    {
@@ -278,8 +278,8 @@
     "desc": "Spending on and support for the armed forces.",
     "x": 23,
     "y": 26,
-    "note": "Estimated from 360 party manifestos (in 54 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Parties that give the armed forces a lot of attention lean right and a little authoritarian.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 54 countries",
     "icon": "swords"
    },
    {
@@ -288,8 +288,8 @@
     "desc": "Countries pool more sovereignty in a shared body.",
     "x": 3,
     "y": -24,
-    "note": "Estimated from the 114 European parties (in 31 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Pooling more power in a shared body is backed by centrist, liberal-leaning parties.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 114 parties in 31 countries",
     "icon": "handshake"
    },
    {
@@ -298,8 +298,8 @@
     "desc": "Tariffs and rules that shield domestic producers.",
     "x": -11,
     "y": 58,
-    "note": "Estimated from the 35 European parties (in 16 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "This one splits the middle. Left parties protect jobs and nationalist right parties protect industry, so it lands near the centre line but high on the grid.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 35 parties in 16 countries",
     "icon": "shield"
    },
    {
@@ -308,8 +308,8 @@
     "desc": "Strong government rules on how businesses operate.",
     "x": -68,
     "y": -43,
-    "note": "Estimated from the 28 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Strong rules on business are a left-wing instinct, and the parties behind them are mostly socially liberal.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 28 parties in 17 countries",
     "icon": "clipboard-check"
    }
   ],
@@ -320,8 +320,8 @@
     "desc": "Cutting military spending and favouring disarmament and peace.",
     "x": -16,
     "y": -12,
-    "note": "Estimated from 360 party manifestos (in 50 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Parties that stress peace and disarmament lean left and a little liberal.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 50 countries",
     "icon": "hand-heart"
    },
    {
@@ -330,8 +330,8 @@
     "desc": "Law and public life that uphold traditional moral values.",
     "x": 39,
     "y": 59,
-    "note": "Estimated from 360 party manifestos (in 56 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Parties that talk most about traditional values are strongly authoritarian and lean right.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 56 countries",
     "icon": "scroll"
    },
    {
@@ -340,8 +340,8 @@
     "desc": "Different cultures keep their own identities within one society.",
     "x": -53,
     "y": -62,
-    "note": "Estimated from the 24 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Parties that welcome many cultures living side by side lean left and liberal.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 24 parties in 17 countries",
     "icon": "users"
    },
    {
@@ -350,8 +350,8 @@
     "desc": "Attacking elites and the political establishment.",
     "x": 7,
     "y": 59,
-    "note": "Estimated from the 49 European parties (in 26 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Attacking elites is a populist theme. It sits high on the grid and close to the middle on the economy because both left and right do it.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 49 parties in 26 countries",
     "icon": "megaphone"
    },
    {
@@ -360,8 +360,8 @@
     "desc": "Few barriers to buying and selling across borders.",
     "x": 43,
     "y": -36,
-    "note": "Estimated from the 15 European parties (in 11 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Open borders for goods and services means fewer state controls, which makes it right-leaning and liberal.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 15 parties in 11 countries",
     "icon": "ship"
    }
   ],
@@ -372,8 +372,8 @@
     "desc": "Stronger policing and harsher sentences, even at some cost to civil liberties.",
     "x": 23,
     "y": 75,
-    "note": "Estimated from the 55 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Harsher policing and sentences are pushed by authoritarian parties from across the economic spectrum, so it sits high and only a bit right.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 55 parties in 27 countries",
     "icon": "siren"
    },
    {
@@ -382,8 +382,8 @@
     "desc": "More public spending on schools and universities.",
     "x": -19,
     "y": -3,
-    "note": "Estimated from 360 party manifestos (in 53 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "note": "Spending more on schools and universities is mildly left, and it's backed from across the spectrum.",
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived · 360 manifestos in 53 countries",
     "icon": "graduation-cap"
    },
    {
@@ -392,8 +392,8 @@
     "desc": "Religious principles shape law and public policy.",
     "x": 13,
     "y": 79,
-    "note": "Estimated from the 34 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Parties that want faith to shape the law are strongly traditional, so it sits near the top. It has little to say about economics.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 34 parties in 17 countries",
     "icon": "church"
    },
    {
@@ -402,8 +402,8 @@
     "desc": "A union of countries sets shared foreign and defence policy.",
     "x": 3,
     "y": -31,
-    "note": "Estimated from the 24 European parties (in 15 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Parties that want a shared foreign and defence policy lean slightly liberal, and they come from all along the economic line.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 24 parties in 15 countries",
     "icon": "badge-alert"
    },
    {
@@ -412,8 +412,8 @@
     "desc": "Elected governments get a say in judicial decisions and appointments.",
     "x": 15,
     "y": 78,
-    "note": "Estimated from the 12 European parties (in 8 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Wanting politicians to have a say over courts is a strongly authoritarian stance, with a mild lean right.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 12 parties in 8 countries",
     "icon": "gavel"
    }
   ],
@@ -424,8 +424,8 @@
     "desc": "Decisions made nationally, with less power for regions.",
     "x": 15,
     "y": 78,
-    "note": "Estimated from the 16 European parties (in 11 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Parties that want decisions made nationally are strongly authoritarian, with little economic lean.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 16 parties in 11 countries",
     "icon": "building"
    },
    {
@@ -434,8 +434,8 @@
     "desc": "Economic growth takes priority over environmental protection.",
     "x": 34,
     "y": 75,
-    "note": "Estimated from the 25 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Putting the economy first is right-leaning. In practice the parties that do it are also traditional and authoritarian.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 25 parties in 17 countries",
     "icon": "factory"
    },
    {
@@ -444,8 +444,8 @@
     "desc": "Citizens decide big issues by referendum rather than leaving them to representatives.",
     "x": 5,
     "y": 59,
-    "note": "Estimated from the 26 European parties (in 14 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Letting the public decide big questions by referendum is mostly a populist idea. Populists sit high on the grid but all over the economic spectrum.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 26 parties in 14 countries",
     "icon": "vote"
    },
    {
@@ -454,8 +454,8 @@
     "desc": "People are citizens of the world first, and borders matter less.",
     "x": -31,
     "y": -65,
-    "note": "Estimated from the 40 European parties (in 22 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Seeing yourself as a citizen of the world is a liberal, left-leaning outlook.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 40 parties in 22 countries",
     "icon": "globe"
    },
    {
@@ -464,8 +464,8 @@
     "desc": "Lowering taxes even if public services receive less money.",
     "x": 57,
     "y": 33,
-    "note": "Estimated from the 27 European parties (in 16 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "note": "Tax cuts are backed by the economic right, often alongside parties that favour traditional values. That pulls it a little way up the grid.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 27 parties in 16 countries",
     "icon": "scissors"
    }
   ]
