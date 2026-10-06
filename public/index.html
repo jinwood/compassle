@@ -8,11 +8,14 @@
 <meta name="theme-color" content="#13203b">
 <meta property="og:title" content="Compassle">
 <meta property="og:description" content="A daily game: place five political ideas on the compass.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/og.png">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="preload" href="/fonts/BigShouldersDisplay-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -76,6 +79,9 @@
     <div class="nextin" id="nextin"></div>
     <button id="again" class="alt">Play a random set</button>
   </section>
+  <footer class="foot2">
+    <a href="/about.html">About and sources</a> · <a href="https://github.com/jinwood/compassle/issues" rel="noopener">Disagree with a placement?</a>
+  </footer>
 </main>
 <dialog id="dlg" aria-label="Your record">
   <div class="dhead"><h3>Your record</h3><button class="ghost" id="dclose" type="button">Close</button></div>
