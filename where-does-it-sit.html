@@ -1,0 +1,273 @@
+<title>Where Does It Sit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow column. Card on top, square left/right x authoritarian/libertarian pad in the middle, reveal and button below. */
+:root{
+  --bg:#e8ecf2; --panel:#f6f8fb; --ink:#13203b; --muted:#566178; --line:#c6cfdb;
+  --accent:#d62839; --accent-ink:#ffffff; --q1:#eef1f6; --q2:#e3e8f0;
+  --good:#2b9a5b; --ok:#d9a916; --meh:#e2761f; --bad:#d62839;
+  --display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
+  --body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'DM Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1524; --panel:#172139; --ink:#edf1f9; --muted:#97a3bb; --line:#2b3754;
+    --accent:#ff5468; --accent-ink:#1a0509; --q1:#141d33; --q2:#1b2744;
+    --good:#43c479; --ok:#f0c43a; --meh:#f59244; --bad:#ff5468; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1524; --panel:#172139; --ink:#edf1f9; --muted:#97a3bb; --line:#2b3754;
+  --accent:#ff5468; --accent-ink:#1a0509; --q1:#141d33; --q2:#1b2744;
+  --good:#43c479; --ok:#f0c43a; --meh:#f59244; --bad:#ff5468; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;padding-inline:16px;padding-block:20px 40px}
+main{max-width:520px;margin-inline:auto;display:flex;flex-direction:column;gap:16px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(2.2rem,9vw,3rem);line-height:.9;letter-spacing:.01em;text-transform:uppercase;margin:0;text-wrap:balance}
+h1 span{color:var(--accent)}
+.meta{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:right;letter-spacing:.04em}
+.progress{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.progress i{height:6px;background:var(--line);display:block;transition:background .2s}
+.progress i.cur{background:var(--ink)}
+.progress i.g{background:var(--good)}.progress i.y{background:var(--ok)}.progress i.o{background:var(--meh)}.progress i.r{background:var(--bad)}
+.card{background:var(--panel);border:1px solid var(--line);padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.card h2{font-family:var(--display);font-weight:900;font-size:clamp(2rem,8vw,2.6rem);line-height:.95;text-transform:uppercase;margin:0;text-wrap:balance}
+.card p{margin:0;color:var(--muted);max-width:60ch}
+.padwrap{display:grid;grid-template-columns:auto 1fr auto;grid-template-rows:auto auto auto;gap:6px;align-items:center}
+.ax{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);user-select:none}
+.ax.t{grid-column:2;grid-row:1;text-align:center}
+.ax.b{grid-column:2;grid-row:3;text-align:center}
+.ax.l{grid-column:1;grid-row:2;writing-mode:vertical-rl;transform:rotate(180deg)}
+.ax.r{grid-column:3;grid-row:2;writing-mode:vertical-rl}
+.pad{grid-column:2;grid-row:2;position:relative;aspect-ratio:1/1;width:100%;max-width:100%;border:2px solid var(--ink);touch-action:none;cursor:crosshair;overflow:hidden;
+  background:
+    linear-gradient(var(--line) 1px,transparent 1px) 0 0/10% 10%,
+    linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/10% 10%,
+    var(--q1)}
+.pad::before{content:"";position:absolute;inset:0 50% 50% 0;background:var(--q2);opacity:.75;pointer-events:none}
+.pad::after{content:"";position:absolute;inset:50% 0 0 50%;background:var(--q2);opacity:.75;pointer-events:none}
+.pad:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.axis-h,.axis-v{position:absolute;background:var(--ink);opacity:.55;z-index:1;pointer-events:none}
+.axis-h{left:0;right:0;top:50%;height:1px}.axis-v{top:0;bottom:0;left:50%;width:1px}
+.pad svg{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.pin{position:absolute;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);z-index:3;pointer-events:none;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;font-weight:500}
+.pin.you{background:var(--ink);color:var(--bg);box-shadow:0 0 0 3px var(--bg)}
+.pin.ans{background:var(--accent);color:var(--accent-ink);box-shadow:0 0 0 3px var(--bg)}
+.hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted);pointer-events:none;z-index:2;text-align:center;padding:0 24px}
+.hint span{background:var(--panel);padding:6px 10px;border:1px solid var(--line)}
+.reveal{border:1px solid var(--line);background:var(--panel);padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.score{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.score b{font-family:var(--display);font-weight:900;font-size:2.4rem;line-height:1}
+.score span{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.05em}
+.reveal p{margin:0;max-width:60ch}
+.reveal small{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
+button{font-family:var(--display);font-weight:900;font-size:1.35rem;letter-spacing:.06em;text-transform:uppercase;background:var(--ink);color:var(--bg);border:0;padding:14px 18px;cursor:pointer;width:100%}
+button:disabled{background:var(--line);color:var(--muted);cursor:not-allowed}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+button.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.total{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.total b{font-family:var(--display);font-weight:900;font-size:clamp(3.6rem,16vw,5rem);line-height:.9}
+.total span{font-family:var(--mono);color:var(--muted)}
+.rows{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);min-width:0}
+.row .sq{width:18px;height:18px}
+.row .nm{min-width:0;overflow-wrap:anywhere}
+.row .pt{font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sq.g{background:var(--good)}.sq.y{background:var(--ok)}.sq.o{background:var(--meh)}.sq.r{background:var(--bad)}
+pre{font-family:var(--mono);font-size:13px;background:var(--panel);border:1px solid var(--line);padding:12px 14px;margin:0;white-space:pre-wrap;overflow-wrap:anywhere;user-select:all}
+.foot{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.03em;max-width:60ch}
+.key{display:flex;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.key span{display:inline-flex;align-items:center;gap:5px}.key i{width:10px;height:10px;display:inline-block}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<main>
+  <header>
+    <h1>Where does<br>it <span>sit?</span></h1>
+    <div class="meta">DEMO #1<br>TUE 6 OCT 2026</div>
+  </header>
+
+  <section id="play" style="display:contents">
+    <div class="progress" id="progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+    <div class="card">
+      <div class="tag" id="ctag"></div>
+      <h2 id="ctitle"></h2>
+      <p id="cdesc"></p>
+    </div>
+
+    <div class="padwrap">
+      <div class="ax t">Authoritarian</div>
+      <div class="ax l">Left</div>
+      <div class="pad" id="pad" tabindex="0" role="application" aria-label="Placement grid. Click or use arrow keys to place the card. Left to right is economic, bottom to top is authoritarian.">
+        <div class="axis-h"></div><div class="axis-v"></div>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line id="link" x1="0" y1="0" x2="0" y2="0" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4 3" vector-effect="non-scaling-stroke" visibility="hidden"/></svg>
+        <div class="hint" id="hint"><span>Tap or drag to place it</span></div>
+        <div class="pin you" id="pinYou" hidden></div>
+        <div class="pin ans" id="pinAns" hidden></div>
+      </div>
+      <div class="ax r">Right</div>
+      <div class="ax b">Libertarian</div>
+    </div>
+
+    <div class="reveal" id="reveal" hidden aria-live="polite">
+      <div class="score"><b id="rpts"></b><span id="rdist"></span></div>
+      <p id="rnote"></p>
+      <small>Demo placement. These reference positions are illustrative estimates, not survey data.</small>
+    </div>
+
+    <button id="go" disabled>Lock it in</button>
+    <div class="key"><span><i style="background:var(--good)"></i>within 15</span><span><i style="background:var(--ok)"></i>30</span><span><i style="background:var(--meh)"></i>50</span><span><i style="background:var(--bad)"></i>further</span></div>
+  </section>
+
+  <section id="end" hidden style="display:none;flex-direction:column;gap:16px">
+    <div class="total"><b id="tot"></b><span>/ 500</span></div>
+    <div class="padwrap">
+      <div class="ax t">Authoritarian</div>
+      <div class="ax l">Left</div>
+      <div class="pad" id="mini" style="cursor:default">
+        <div class="axis-h"></div><div class="axis-v"></div>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" id="minisvg"></svg>
+      </div>
+      <div class="ax r">Right</div>
+      <div class="ax b">Libertarian</div>
+    </div>
+    <div class="foot">Dark pins are your guesses. Red pins are the reference spots. Numbers match the list below.</div>
+    <div class="rows" id="rows"></div>
+    <pre id="share"></pre>
+    <button id="copy">Copy result</button>
+    <button id="again" class="alt">Play again</button>
+  </section>
+</main>
+
+<script>
+(function(){
+  // Coordinates run -100..100. x: Left(-) to Right(+). y: Libertarian(-) to Authoritarian(+).
+  var CARDS=[
+    {tag:"Policy",title:"Wealth tax",desc:"An annual tax on total net assets above a high threshold.",x:-65,y:10,
+     note:"Heavy redistribution puts it hard left. It asks little of personal freedom, so it sits close to the middle on the vertical."},
+    {tag:"Policy",title:"Tariffs",desc:"Taxes on imported goods to protect home industry.",x:30,y:35,
+     note:"Once a free-trade-right target, now backed by the nationalist right and parts of the left. The state steering trade pulls it up the grid."},
+    {tag:"Policy",title:"Conscription",desc:"The state requires adults to serve in the military for a period.",x:20,y:70,
+     note:"The state orders people into service, which makes it strongly authoritarian. The slight right lean reflects who usually proposes it."},
+    {tag:"Policy",title:"Legalising all drugs",desc:"Ending criminal penalties for possession and sale.",x:-10,y:-75,
+     note:"Left and right libertarians both back it, so it lands near the economic middle and far down the grid."},
+    {tag:"Policy",title:"Universal basic income",desc:"A regular cash payment to every adult with no conditions.",x:-55,y:-25,
+     note:"Left on economics because it redistributes. It leans libertarian because it removes means tests and case workers."}
+  ];
+  var $=function(s){return document.querySelector(s)};
+  var pad=$("#pad"),pinYou=$("#pinYou"),pinAns=$("#pinAns"),link=$("#link"),hint=$("#hint"),go=$("#go"),reveal=$("#reveal");
+  var bars=[].slice.call(document.querySelectorAll("#progress i"));
+  var i=0,pos=null,locked=false,drag=false,res=[];
+
+  function clamp(v){return Math.max(-100,Math.min(100,v))}
+  function px(x){return (x+100)/2}
+  function py(y){return (100-y)/2}
+  function band(d){return d<=15?"g":d<=30?"y":d<=50?"o":"r"}
+  var EMO={g:"\u{1F7E9}",y:"\u{1F7E8}",o:"\u{1F7E7}",r:"\u{1F7E5}"};
+
+  function put(el,x,y){el.style.left=px(x)+"%";el.style.top=py(y)+"%"}
+
+  function loadCard(){
+    var c=CARDS[i];
+    $("#ctag").textContent=c.tag+" · "+(i+1)+" of "+CARDS.length;
+    $("#ctitle").textContent=c.title;
+    $("#cdesc").textContent=c.desc;
+    pos=null;locked=false;
+    pinYou.hidden=true;pinAns.hidden=true;hint.style.display="flex";
+    link.setAttribute("visibility","hidden");
+    reveal.hidden=true;
+    go.disabled=true;go.textContent="Lock it in";
+    bars.forEach(function(b,k){b.className=k<i?(b.dataset.c||""):(k===i?"cur":"")});
+  }
+
+  function setPos(x,y){
+    pos={x:clamp(Math.round(x)),y:clamp(Math.round(y))};
+    put(pinYou,pos.x,pos.y);pinYou.hidden=false;hint.style.display="none";go.disabled=false;
+  }
+  function fromEvent(e){
+    var r=pad.getBoundingClientRect();
+    setPos(((e.clientX-r.left)/r.width)*200-100,100-((e.clientY-r.top)/r.height)*200);
+  }
+  pad.addEventListener("pointerdown",function(e){if(locked)return;drag=true;try{pad.setPointerCapture(e.pointerId)}catch(_){}fromEvent(e);pad.focus({preventScroll:true})});
+  pad.addEventListener("pointermove",function(e){if(drag&&!locked)fromEvent(e)});
+  pad.addEventListener("pointerup",function(){drag=false});
+  pad.addEventListener("pointercancel",function(){drag=false});
+  pad.addEventListener("keydown",function(e){
+    if(locked)return;
+    var s=e.shiftKey?10:2,dx=0,dy=0;
+    if(e.key==="ArrowLeft")dx=-s;else if(e.key==="ArrowRight")dx=s;else if(e.key==="ArrowUp")dy=s;else if(e.key==="ArrowDown")dy=-s;else return;
+    e.preventDefault();
+    var b=pos||{x:0,y:0};setPos(b.x+dx,b.y+dy);
+  });
+
+  function lock(){
+    var c=CARDS[i],dx=pos.x-c.x,dy=pos.y-c.y,d=Math.hypot(dx,dy),pts=Math.max(0,Math.round(100-d)),b=band(d);
+    res.push({title:c.title,gx:pos.x,gy:pos.y,ax:c.x,ay:c.y,d:d,pts:pts,b:b});
+    bars[i].dataset.c=b;bars[i].className=b;
+    put(pinAns,c.x,c.y);pinAns.hidden=false;
+    link.setAttribute("x1",px(pos.x));link.setAttribute("y1",py(pos.y));link.setAttribute("x2",px(c.x));link.setAttribute("y2",py(c.y));
+    link.setAttribute("visibility","visible");
+    $("#rpts").textContent=pts+" pts";
+    $("#rdist").textContent="OFF BY "+Math.round(d)+"  ·  "+Math.round(Math.abs(dx))+" ACROSS, "+Math.round(Math.abs(dy))+" UP/DOWN";
+    $("#rnote").textContent=c.note;
+    reveal.hidden=false;locked=true;
+    go.textContent=i<CARDS.length-1?"Next card":"See results";
+    reveal.scrollIntoView({block:"nearest",behavior:"smooth"});
+  }
+
+  function finish(){
+    $("#play").style.display="none";
+    var end=$("#end");end.hidden=false;end.style.display="flex";
+    var total=res.reduce(function(a,r){return a+r.pts},0);
+    $("#tot").textContent=total;
+    var rows=$("#rows");rows.innerHTML="";
+    var svg=$("#minisvg"),mini=$("#mini"),lines="";
+    res.forEach(function(r,k){
+      var row=document.createElement("div");row.className="row";
+      row.innerHTML='<span class="sq '+r.b+'"></span><span class="nm"></span><span class="pt"></span>';
+      row.querySelector(".nm").textContent=(k+1)+". "+r.title;
+      row.querySelector(".pt").textContent=r.pts+" pts";
+      rows.appendChild(row);
+      lines+='<line x1="'+px(r.gx)+'" y1="'+py(r.gy)+'" x2="'+px(r.ax)+'" y2="'+py(r.ay)+'" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3" vector-effect="non-scaling-stroke"/>';
+      var a=document.createElement("div");a.className="pin ans";a.textContent=k+1;put(a,r.ax,r.ay);mini.appendChild(a);
+      var g=document.createElement("div");g.className="pin you";g.textContent=k+1;put(g,r.gx,r.gy);mini.appendChild(g);
+    });
+    svg.innerHTML=lines;
+    var hot=res.reduce(function(m,r){return r.d>m.d?r:m},res[0]);
+    var txt="Where Does It Sit? Demo #1\n"+res.map(function(r){return EMO[r.b]}).join("")+"  "+total+"/500\n\u{1F525} Hot take: "+hot.title;
+    $("#share").textContent=txt;
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+
+  go.addEventListener("click",function(){
+    if(!locked){if(pos)lock();return}
+    if(i<CARDS.length-1){i++;loadCard()}else finish();
+  });
+  $("#copy").addEventListener("click",function(){
+    var btn=$("#copy"),t=$("#share").textContent;
+    function fallback(){
+      var r=document.createRange();r.selectNodeContents($("#share"));
+      var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent="Selected. Copy it manually";
+    }
+    try{
+      navigator.clipboard.writeText(t).then(function(){btn.textContent="Copied"},fallback);
+    }catch(_){fallback()}
+  });
+  $("#again").addEventListener("click",function(){
+    res=[];i=0;
+    var mini=$("#mini");[].slice.call(mini.querySelectorAll(".pin")).forEach(function(n){n.remove()});
+    bars.forEach(function(b){delete b.dataset.c});
+    $("#end").style.display="none";$("#end").hidden=true;$("#copy").textContent="Copy result";
+    $("#play").style.display="contents";loadCard();
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+  loadCard();
+})();
+</script>

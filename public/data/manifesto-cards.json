@@ -1,0 +1,74 @@
+[
+ {
+  "tag": "Idea",
+  "title": "Military strength",
+  "desc": "Spending on and support for the armed forces.",
+  "x": 23,
+  "y": 26,
+  "note": "Estimated from 360 party manifestos (in 54 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ },
+ {
+  "tag": "Idea",
+  "title": "Anti-militarism",
+  "desc": "Cutting military spending and favouring disarmament and peace.",
+  "x": -16,
+  "y": -12,
+  "note": "Estimated from 360 party manifestos (in 50 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ },
+ {
+  "tag": "Idea",
+  "title": "Nationalisation",
+  "desc": "Key industries and utilities owned by the state.",
+  "x": -22,
+  "y": 4,
+  "note": "Estimated from 360 party manifestos (in 58 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ },
+ {
+  "tag": "Idea",
+  "title": "Expanding education",
+  "desc": "More public spending on schools and universities.",
+  "x": -19,
+  "y": -3,
+  "note": "Estimated from 360 party manifestos (in 53 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ },
+ {
+  "tag": "Idea",
+  "title": "Traditional morality",
+  "desc": "Law and public life that uphold traditional moral values.",
+  "x": 39,
+  "y": 59,
+  "note": "Estimated from 360 party manifestos (in 56 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ },
+ {
+  "tag": "Idea",
+  "title": "Equality",
+  "desc": "Fairer outcomes and treatment for all groups in society.",
+  "x": -22,
+  "y": -19,
+  "note": "Estimated from 360 party manifestos (in 50 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ },
+ {
+  "tag": "Idea",
+  "title": "Trade unions",
+  "desc": "Support for organised labour and workers' collective rights.",
+  "x": -27,
+  "y": -5,
+  "note": "Estimated from 360 party manifestos (in 55 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ },
+ {
+  "tag": "Idea",
+  "title": "Human rights and freedoms",
+  "desc": "Personal freedom, civil rights and the rule of law.",
+  "x": 6,
+  "y": -34,
+  "note": "Estimated from 360 party manifestos (in 49 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
+  "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+ }
+]

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Compassle</title>
+<meta name="description" content="A daily game: place five political ideas on the compass, then see how close you got.">
+<meta name="theme-color" content="#13203b">
+<meta property="og:title" content="Compassle">
+<meta property="og:description" content="A daily game: place five political ideas on the compass.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Where does<br>it <span>sit?</span></h1>
+    <div class="meta" id="meta"></div>
+  </header>
+  <noscript><p class="noscript">This game needs JavaScript.</p></noscript>
+
+  <section id="play" style="display:contents">
+    <div class="progress" id="progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="card">
+      <div class="tag" id="ctag"></div>
+      <h2 id="ctitle"></h2>
+      <p id="cdesc"></p>
+    </div>
+    <div class="padwrap">
+      <div class="ax t">Authoritarian</div>
+      <div class="ax l">Left</div>
+      <div class="pad" id="pad" tabindex="0" role="application" aria-label="Placement grid. Click or use arrow keys to place the card. Left to right is economic, bottom to top is authoritarian.">
+        <div class="axis-h"></div><div class="axis-v"></div>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line id="link" x1="0" y1="0" x2="0" y2="0" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4 3" vector-effect="non-scaling-stroke" visibility="hidden"/></svg>
+        <div class="hint" id="hint"><span>Tap or drag to place it</span></div>
+        <div class="pin you" id="pinYou" hidden></div>
+        <div class="pin ans" id="pinAns" hidden></div>
+      </div>
+      <div class="ax r">Right</div>
+      <div class="ax b">Libertarian</div>
+    </div>
+    <div class="reveal" id="reveal" hidden aria-live="polite">
+      <div class="score"><b id="rpts"></b><span id="rdist"></span></div>
+      <p id="rnote"></p>
+      <small id="rsrc"></small>
+    </div>
+    <button id="go" disabled>Lock it in</button>
+    <div class="key"><span><i style="background:var(--good)"></i>within 15</span><span><i style="background:var(--ok)"></i>30</span><span><i style="background:var(--meh)"></i>50</span><span><i style="background:var(--bad)"></i>further</span></div>
+  </section>
+
+  <section id="end" hidden style="display:none;flex-direction:column;gap:16px">
+    <div class="total"><b id="tot"></b><span>/ 500</span></div>
+    <div class="padwrap">
+      <div class="ax t">Authoritarian</div>
+      <div class="ax l">Left</div>
+      <div class="pad" id="mini" style="cursor:default">
+        <div class="axis-h"></div><div class="axis-v"></div>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" id="minisvg"></svg>
+      </div>
+      <div class="ax r">Right</div>
+      <div class="ax b">Libertarian</div>
+    </div>
+    <div class="foot">Dark pins are your guesses. Red pins are the reference spots. Numbers match the list below.</div>
+    <div class="rows" id="rows"></div>
+    <pre id="share"></pre>
+    <button id="copy">Copy result</button>
+    <div class="stats" id="stats"></div>
+    <div class="nextin" id="nextin"></div>
+    <button id="again" class="alt">Play a random set</button>
+  </section>
+</main>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>

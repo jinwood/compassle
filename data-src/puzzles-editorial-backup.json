@@ -1,0 +1,346 @@
+{
+ "epoch": "2026-10-06",
+ "days": [
+  [
+   {
+    "tag": "Policy",
+    "title": "Wealth tax",
+    "desc": "An annual tax on total net assets above a high threshold.",
+    "x": -65,
+    "y": 10,
+    "note": "Heavy redistribution puts it hard left. It asks little of personal freedom, so it sits close to the middle on the vertical.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Tariffs",
+    "desc": "Taxes on imported goods to protect home industry.",
+    "x": 30,
+    "y": 35,
+    "note": "Once a free-trade-right target, now backed by the nationalist right and parts of the left. The state steering trade pulls it up the grid.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Conscription",
+    "desc": "The state requires adults to serve in the military for a period.",
+    "x": 20,
+    "y": 70,
+    "note": "The state orders people into service, which makes it strongly authoritarian. The slight right lean reflects who usually proposes it.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Legalising all drugs",
+    "desc": "Ending criminal penalties for possession and sale.",
+    "x": -10,
+    "y": -75,
+    "note": "Left and right libertarians both back it, so it lands near the economic middle and far down the grid.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Universal basic income",
+    "desc": "A regular cash payment to every adult with no conditions.",
+    "x": -55,
+    "y": -25,
+    "note": "Left on economics because it redistributes. It leans libertarian because it removes means tests and case workers.",
+    "source": "Editorial estimate"
+   }
+  ],
+  [
+   {
+    "tag": "Policy",
+    "title": "Rent control",
+    "desc": "A legal cap on how much landlords can raise rents.",
+    "x": -55,
+    "y": 25,
+    "note": "Market intervention on behalf of tenants is left economics. Dictating prices to private owners adds an authoritarian tilt.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Nuclear power",
+    "desc": "State-backed expansion of nuclear energy.",
+    "x": 15,
+    "y": 15,
+    "note": "Not a clean left-right issue. Large state projects lean authoritarian, while pro-industry support leans right.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Compulsory voting",
+    "desc": "Citizens are fined for not turning up to vote.",
+    "x": -10,
+    "y": 45,
+    "note": "Compelling behaviour is authoritarian. It has little economic content so it stays near the centre line.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Politician",
+    "country": "US",
+    "title": "Bernard Sanders",
+    "desc": "U.S. Senator, VT (Independent). Scored on the 119th Congress.",
+    "x": -55,
+    "y": -43,
+    "note": "Placed from roll-call voting. DW-NOMINATE dimension 1 (-0.55) is economic left-right. Dimension 2 (-0.43) captures other cross-cutting issues and is only a rough stand-in for libertarian-authoritarian.",
+    "source": "Voteview DW-NOMINATE (Lewis, Poole, Rosenthal et al.)"
+   },
+   {
+    "tag": "Party",
+    "country": "UK",
+    "title": "Conservative Party",
+    "desc": "Vote share at the most recent election: 23.7%.",
+    "x": 49,
+    "y": 43,
+    "note": "Experts rated this party 7.4/10 on economics (0 left, 10 right) and 7.1/10 on GAL-TAN (0 libertarian/postmaterialist, 10 traditional/authoritarian). GAL-TAN is a cultural axis, so it only approximates the vertical.",
+    "source": "Chapel Hill Expert Survey 2024 (Rovny et al.)"
+   }
+  ],
+  [
+   {
+    "tag": "Policy",
+    "title": "Privatising healthcare",
+    "desc": "Moving health services from the state to private providers.",
+    "x": 70,
+    "y": -10,
+    "note": "Markets over state provision is firmly right. Little direct effect on personal liberty.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Mass surveillance",
+    "desc": "Governments monitor communications in bulk to prevent crime.",
+    "x": 25,
+    "y": 85,
+    "note": "Close to the top of the authoritarian axis. Economics barely matters, though it is often backed by the right.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Open borders",
+    "desc": "Anyone may live and work in any country.",
+    "x": -20,
+    "y": -80,
+    "note": "Left and right libertarians converge on free movement, for different reasons.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Politician",
+    "country": "US",
+    "title": "Alexandria Ocasio-Cortez",
+    "desc": "U.S. Representative, NY (Democrat). Scored on the 119th Congress.",
+    "x": -33,
+    "y": -94,
+    "note": "Placed from roll-call voting. DW-NOMINATE dimension 1 (-0.33) is economic left-right. Dimension 2 (-0.94) captures other cross-cutting issues and is only a rough stand-in for libertarian-authoritarian.",
+    "source": "Voteview DW-NOMINATE (Lewis, Poole, Rosenthal et al.)"
+   },
+   {
+    "tag": "Party",
+    "country": "UK",
+    "title": "Labour Party",
+    "desc": "Vote share at the most recent election: 33.7%.",
+    "x": -28,
+    "y": -33,
+    "note": "Experts rated this party 3.6/10 on economics (0 left, 10 right) and 3.3/10 on GAL-TAN (0 libertarian/postmaterialist, 10 traditional/authoritarian). GAL-TAN is a cultural axis, so it only approximates the vertical.",
+    "source": "Chapel Hill Expert Survey 2024 (Rovny et al.)"
+   }
+  ],
+  [
+   {
+    "tag": "Policy",
+    "title": "Nationalising railways",
+    "desc": "Bringing rail operations into public ownership.",
+    "x": -70,
+    "y": 30,
+    "note": "Public ownership of infrastructure is a core left position. State control pulls it up the grid.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Death penalty",
+    "desc": "State execution as punishment for the gravest crimes.",
+    "x": 30,
+    "y": 75,
+    "note": "The state taking life is the sharpest authoritarian act. It is more often backed by the right.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Abolishing income tax",
+    "desc": "No tax on earnings, with the state funded another way.",
+    "x": 85,
+    "y": -55,
+    "note": "Deep economic right, and strongly libertarian in spirit.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Politician",
+    "country": "US",
+    "title": "Susan Collins",
+    "desc": "U.S. Senator, ME (Republican). Scored on the 119th Congress.",
+    "x": 12,
+    "y": -51,
+    "note": "Placed from roll-call voting. DW-NOMINATE dimension 1 (0.12) is economic left-right. Dimension 2 (-0.51) captures other cross-cutting issues and is only a rough stand-in for libertarian-authoritarian.",
+    "source": "Voteview DW-NOMINATE (Lewis, Poole, Rosenthal et al.)"
+   },
+   {
+    "tag": "Party",
+    "country": "UK",
+    "title": "Liberal Democrats",
+    "desc": "Vote share at the most recent election: 12.2%.",
+    "x": -14,
+    "y": -65,
+    "note": "Experts rated this party 4.3/10 on economics (0 left, 10 right) and 1.8/10 on GAL-TAN (0 libertarian/postmaterialist, 10 traditional/authoritarian). GAL-TAN is a cultural axis, so it only approximates the vertical.",
+    "source": "Chapel Hill Expert Survey 2024 (Rovny et al.)"
+   }
+  ],
+  [
+   {
+    "tag": "Policy",
+    "title": "Public broadcaster",
+    "desc": "A publicly funded national TV and radio service.",
+    "x": -30,
+    "y": 20,
+    "note": "State-funded and left of centre. Public control of media adds a modest authoritarian pull.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Hate speech laws",
+    "desc": "Criminal penalties for speech targeting protected groups.",
+    "x": -20,
+    "y": 60,
+    "note": "Restricting speech is authoritarian, and the left more often proposes it.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Flat tax",
+    "desc": "One tax rate for everyone regardless of income.",
+    "x": 70,
+    "y": -5,
+    "note": "Cuts progressive redistribution so right, but says little about personal freedom.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Politician",
+    "country": "US",
+    "title": "Mitch McConnell",
+    "desc": "U.S. Senator, KY (Republican). Scored on the 119th Congress.",
+    "x": 40,
+    "y": 2,
+    "note": "Placed from roll-call voting. DW-NOMINATE dimension 1 (0.40) is economic left-right. Dimension 2 (0.02) captures other cross-cutting issues and is only a rough stand-in for libertarian-authoritarian.",
+    "source": "Voteview DW-NOMINATE (Lewis, Poole, Rosenthal et al.)"
+   },
+   {
+    "tag": "Party",
+    "country": "UK",
+    "title": "Scottish National Party",
+    "desc": "Vote share at the most recent election: 2.5%.",
+    "x": -38,
+    "y": -44,
+    "note": "Experts rated this party 3.1/10 on economics (0 left, 10 right) and 2.8/10 on GAL-TAN (0 libertarian/postmaterialist, 10 traditional/authoritarian). GAL-TAN is a cultural axis, so it only approximates the vertical.",
+    "source": "Chapel Hill Expert Survey 2024 (Rovny et al.)"
+   }
+  ],
+  [
+   {
+    "tag": "Policy",
+    "title": "Free trade deals",
+    "desc": "Agreements removing tariffs between countries.",
+    "x": 55,
+    "y": -40,
+    "note": "Market openness is right, and it reduces state control of trade.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Banning abortion",
+    "desc": "Making terminating a pregnancy illegal.",
+    "x": 50,
+    "y": 80,
+    "note": "State control over the body is strongly authoritarian. Mostly backed from the right.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Cashless society",
+    "desc": "Phasing out physical cash in favour of digital payments.",
+    "x": 10,
+    "y": 40,
+    "note": "Little economic content. Traceable payments hand the state more oversight.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Politician",
+    "country": "US",
+    "title": "Ted Cruz",
+    "desc": "U.S. Senator, TX (Republican). Scored on the 119th Congress.",
+    "x": 78,
+    "y": -18,
+    "note": "Placed from roll-call voting. DW-NOMINATE dimension 1 (0.78) is economic left-right. Dimension 2 (-0.18) captures other cross-cutting issues and is only a rough stand-in for libertarian-authoritarian.",
+    "source": "Voteview DW-NOMINATE (Lewis, Poole, Rosenthal et al.)"
+   },
+   {
+    "tag": "Party",
+    "country": "UK",
+    "title": "Green Party",
+    "desc": "Vote share at the most recent election: 6.4%.",
+    "x": -58,
+    "y": -71,
+    "note": "Experts rated this party 2.1/10 on economics (0 left, 10 right) and 1.4/10 on GAL-TAN (0 libertarian/postmaterialist, 10 traditional/authoritarian). GAL-TAN is a cultural axis, so it only approximates the vertical.",
+    "source": "Chapel Hill Expert Survey 2024 (Rovny et al.)"
+   }
+  ],
+  [
+   {
+    "tag": "Policy",
+    "title": "Sugar tax",
+    "desc": "An extra levy on sugary drinks.",
+    "x": -15,
+    "y": 40,
+    "note": "Nudging behaviour through the state is mildly authoritarian. Small economic effect.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Deregulating planning",
+    "desc": "Making it far easier to build housing without permission.",
+    "x": 45,
+    "y": -35,
+    "note": "Fewer state controls on property owners. Right and libertarian.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Policy",
+    "title": "Ending jury trials",
+    "desc": "Replacing juries with judges for most cases.",
+    "x": 5,
+    "y": 70,
+    "note": "Reduces citizen participation in justice. No real economic content.",
+    "source": "Editorial estimate"
+   },
+   {
+    "tag": "Politician",
+    "country": "US",
+    "title": "Thomas Massie",
+    "desc": "U.S. Representative, KY (Republican). Scored on the 119th Congress.",
+    "x": 65,
+    "y": -76,
+    "note": "Placed from roll-call voting. DW-NOMINATE dimension 1 (0.65) is economic left-right. Dimension 2 (-0.76) captures other cross-cutting issues and is only a rough stand-in for libertarian-authoritarian.",
+    "source": "Voteview DW-NOMINATE (Lewis, Poole, Rosenthal et al.)"
+   },
+   {
+    "tag": "Party",
+    "country": "UK",
+    "title": "Reform UK",
+    "desc": "Vote share at the most recent election: 14.3%.",
+    "x": 68,
+    "y": 82,
+    "note": "Experts rated this party 8.4/10 on economics (0 left, 10 right) and 9.1/10 on GAL-TAN (0 libertarian/postmaterialist, 10 traditional/authoritarian). GAL-TAN is a cultural axis, so it only approximates the vertical.",
+    "source": "Chapel Hill Expert Survey 2024 (Rovny et al.)"
+   }
+  ]
+ ]
+}
