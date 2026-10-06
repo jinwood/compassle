@@ -28,7 +28,7 @@ Status key: **[done]** finished, **[you]** needs you, **[open]** not started or 
 
 The game sends one anonymous record when a daily is finished: puzzle number, total, and the score on each idea. No IP, cookie or ID is stored. It goes to `functions/api/finish.js`, a Cloudflare Pages Function, and is stored in a D1 database. The about page describes this. **[you: one-off setup, the code is done]**
 
-1. Create the database: Cloudflare dashboard > Storage & Databases > D1 > Create, name it `compassle`. Open its **Console** tab and run the contents of `schema.sql`.
+1. Create the database: Cloudflare dashboard > Storage & Databases > D1 > Create, name it `compassle`. Open its **Console** tab and run the three statements in `schema.sql`. They contain no comments on purpose: the console flattens pasted text onto one line, so a `--` comment would swallow everything after it. Run them one at a time if it complains. Columns: `play` (random id grouping one game's five rows), `ts` (unix seconds), `day` (puzzle number), `total` (out of 500), `idx` (0-4), `title`, `pts` (0-100).
 2. Bind it: Workers & Pages > your project > Settings > Bindings (or Functions) > Add > D1 database. Variable name must be exactly `DB`, database `compassle`. Add it for both Production and Preview.
 3. Redeploy (push a commit, or Deployments > Retry). Finish a puzzle on the live site, then in the D1 console run `SELECT COUNT(DISTINCT play) FROM scores;` to confirm a row arrived.
 4. Optional but recommended: a rate-limit rule on `/api/finish` (Security > WAF > Rate limiting rules, e.g. 20 requests per minute per IP). The endpoint validates its input, but anyone could still flood it with fake scores.
