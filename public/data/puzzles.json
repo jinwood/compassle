@@ -5,7 +5,7 @@
    {
     "tag": "Idea",
     "title": "Nationalisation",
-    "desc": "Key industries and utilities owned by the state.",
+    "desc": "Key industries and utilities, such as energy, water, rail or banking, are owned and run by the state rather than by private companies.",
     "x": -22,
     "y": 4,
     "note": "Putting industry in public hands is a left-wing idea. It says little about personal freedom, so it sits at the centre line.",
@@ -15,7 +15,7 @@
    {
     "tag": "Idea",
     "title": "Deregulating markets",
-    "desc": "Removing government rules on how businesses operate.",
+    "desc": "Removing or loosening government rules on business, such as licensing, price controls and workplace or environmental requirements, so firms have more freedom to operate.",
     "x": 55,
     "y": 9,
     "note": "Cutting red tape is a favourite of the economic right. It says little about personal freedom, so it stays close to the middle vertically.",
@@ -25,7 +25,7 @@
    {
     "tag": "Idea",
     "title": "Self-reliance over welfare",
-    "desc": "People look after themselves, with less redistribution by the state.",
+    "desc": "People and families look after themselves, with a smaller welfare state and lower taxes to pay for it.",
     "x": 65,
     "y": 32,
     "note": "Expecting people to look after themselves is the mirror image of redistribution. It sits well to the right, with a mild authoritarian tilt.",
@@ -35,7 +35,7 @@
    {
     "tag": "Idea",
     "title": "Secular government",
-    "desc": "Religion kept out of law and public policy.",
+    "desc": "Keeping religion separate from the state, so that laws and public institutions are not based on any one faith.",
     "x": -23,
     "y": -40,
     "note": "Keeping religion out of lawmaking is backed by liberal parties, mostly centre-left.",
@@ -45,7 +45,7 @@
    {
     "tag": "Idea",
     "title": "Fighting corruption",
-    "desc": "Making the clean-up of politics a top priority.",
+    "desc": "Making the clean-up of politics a priority, with tougher rules on bribery, lobbying, party funding and conflicts of interest.",
     "x": -4,
     "y": -19,
     "note": "Almost every party says it wants a cleaner politics, so this lands close to the middle.",
@@ -57,7 +57,7 @@
    {
     "tag": "Idea",
     "title": "Women's rights policies",
-    "desc": "Equal pay, parental leave and similar policies.",
+    "desc": "Laws and programmes aimed at gender equality, such as equal pay, paid parental leave, childcare support and protection from discrimination.",
     "x": -32,
     "y": -56,
     "note": "Equal pay and parental leave are championed mostly by left-leaning, socially liberal parties.",
@@ -67,7 +67,7 @@
    {
     "tag": "Idea",
     "title": "Wealth redistribution",
-    "desc": "Taxing and transferring from richer to poorer people to narrow inequality.",
+    "desc": "Using taxes and transfers to move money from richer to poorer people, for example higher taxes on high earners paying for benefits or public services.",
     "x": -67,
     "y": -43,
     "note": "Taking from the wealthy to help everyone else is the classic left-wing idea. The parties behind it also tend to be socially liberal, so it sits low as well as far left.",
@@ -77,7 +77,7 @@
    {
     "tag": "Idea",
     "title": "Environment over growth",
-    "desc": "Protecting nature even at some cost to economic growth.",
+    "desc": "Protecting nature and limiting pollution, even at the cost of slower growth or fewer development projects.",
     "x": -42,
     "y": -65,
     "note": "Protecting nature even at some economic cost is a left and liberal position, and Green parties lead on it.",
@@ -87,7 +87,7 @@
    {
     "tag": "Idea",
     "title": "Assimilation",
-    "desc": "Newcomers are expected to adopt the majority culture.",
+    "desc": "Newcomers are expected to adopt the majority language, customs and values, with the state encouraging a single shared national culture.",
     "x": 23,
     "y": 72,
     "note": "Expecting newcomers to adopt the local culture is backed mostly by authoritarian parties, with a mild lean to the right.",
@@ -97,7 +97,7 @@
    {
     "tag": "Idea",
     "title": "Rural interests",
-    "desc": "Policy that puts the countryside ahead of cities.",
+    "desc": "Policy that prioritises the countryside, for example farm support, rural services and protecting rural ways of life.",
     "x": 18,
     "y": 62,
     "note": "Putting the countryside first is mostly a traditional, authoritarian position, with a small lean right.",
@@ -109,7 +109,7 @@
    {
     "tag": "Idea",
     "title": "Trade unions",
-    "desc": "Support for organised labour and workers' collective rights.",
+    "desc": "Backing organised labour and workers' collective rights, such as collective bargaining, the right to strike and union representation.",
     "x": -27,
     "y": -5,
     "note": "Backing for organised labour is a left-wing idea that sits about level on personal freedom.",
@@ -119,7 +119,7 @@
    {
     "tag": "Idea",
     "title": "Urban interests",
-    "desc": "Policy that puts cities ahead of the countryside.",
+    "desc": "Policy that prioritises cities, such as public transport, housing and services for dense urban areas.",
     "x": 11,
     "y": -64,
     "note": "Putting cities first is a liberal position, with a mild lean to the right.",
@@ -129,7 +129,7 @@
    {
     "tag": "Idea",
     "title": "Strong executive",
-    "desc": "Leaders can act without heavy constraint.",
+    "desc": "Presidents or prime ministers can make and carry out decisions quickly, with fewer checks from parliament or the courts.",
     "x": 4,
     "y": 69,
     "note": "Letting leaders act without heavy constraint is authoritarian at heart, and it appeals to parties across the economic spectrum.",
@@ -139,7 +139,7 @@
    {
     "tag": "Idea",
     "title": "Human rights and freedoms",
-    "desc": "Personal freedom, civil rights and the rule of law.",
+    "desc": "Protecting personal freedoms, civil rights and the rule of law, such as free speech, fair trials and protection from arbitrary state action.",
     "x": 6,
     "y": -34,
     "note": "Parties that talk most about human rights are liberal, with almost no economic lean.",
@@ -149,7 +149,7 @@
    {
     "tag": "Idea",
     "title": "Liberal immigration",
-    "desc": "Easy rules for people to move to and settle in a country.",
+    "desc": "Easier routes for people to move to a country to work, study or seek safety, with fewer caps and simpler visa rules.",
     "x": -64,
     "y": -66,
     "note": "Open-door parties lean left and are strongly liberal on personal freedom. It's one of the clearest low-and-left ideas.",
@@ -161,7 +161,7 @@
    {
     "tag": "Idea",
     "title": "Free movement across borders",
-    "desc": "Goods, services, capital and workers move freely between member countries.",
+    "desc": "People, goods, services and money can move freely between member countries, for example to work or study, without special permits.",
     "x": 18,
     "y": -9,
     "note": "Letting goods, services and workers move freely appeals to the centre and centre-right, with a lean liberal.",
@@ -171,7 +171,7 @@
    {
     "tag": "Idea",
     "title": "Same-sex marriage",
-    "desc": "Legal marriage for couples of the same sex.",
+    "desc": "Allowing couples of the same sex to marry, with the same legal rights as other married couples.",
     "x": -20,
     "y": -48,
     "note": "Like wider LGBTQ+ rights, this is a socially liberal idea with only a mild economic lean.",
@@ -181,7 +181,7 @@
    {
     "tag": "Idea",
     "title": "Independent judiciary",
-    "desc": "Courts that governments cannot direct.",
+    "desc": "Judges decide cases free from pressure by politicians, with protected appointments and no government direction of rulings.",
     "x": -6,
     "y": -27,
     "note": "Almost every party says it backs independent courts, so this sits near the middle, leaning a little liberal.",
@@ -191,7 +191,7 @@
    {
     "tag": "Idea",
     "title": "Leaving international unions",
-    "desc": "Countries take back powers from shared bodies.",
+    "desc": "Countries take back powers from shared bodies like the EU, to make their own laws, trade deals and border rules.",
     "x": 15,
     "y": 63,
     "note": "Taking powers back from shared bodies is backed by nationalist, authoritarian parties, mostly a bit right of centre.",
@@ -201,7 +201,7 @@
    {
     "tag": "Idea",
     "title": "Limits on leaders",
-    "desc": "Checks and balances that constrain those in power.",
+    "desc": "Strong checks and balances, such as independent courts, a free press and term limits, so those in power cannot act unchecked.",
     "x": -37,
     "y": -59,
     "note": "Checks and balances are favoured by liberal parties, more often on the left.",
@@ -213,7 +213,7 @@
    {
     "tag": "Idea",
     "title": "Nationalism",
-    "desc": "National identity and sovereignty come first.",
+    "desc": "Putting a nation's identity, interests and sovereignty first, including in trade, immigration and relations with other countries.",
     "x": 19,
     "y": 75,
     "note": "Putting the nation first is the signature of authoritarian parties, most of whom lean right on economics.",
@@ -223,7 +223,7 @@
    {
     "tag": "Idea",
     "title": "LGBTQ+ rights",
-    "desc": "Legal protection and equal treatment for LGBTQ+ people.",
+    "desc": "Legal protection from discrimination and equal treatment in areas such as employment, housing, family law and healthcare.",
     "x": -25,
     "y": -56,
     "note": "Backed by socially liberal parties, mostly on the centre-left, so it sits low and a little left.",
@@ -233,7 +233,7 @@
    {
     "tag": "Idea",
     "title": "Equality",
-    "desc": "Fairer outcomes and treatment for all groups in society.",
+    "desc": "Fairer outcomes and treatment for all groups, through equal rights, anti-discrimination laws and support for those who start at a disadvantage.",
     "x": -22,
     "y": -19,
     "note": "Parties that talk about fairness and equal treatment lean left and liberal.",
@@ -243,7 +243,7 @@
    {
     "tag": "Idea",
     "title": "Public services first",
-    "desc": "Spending more on public services in preference to cutting taxes.",
+    "desc": "Putting money into health, education, transport and similar services before cutting taxes, even if that means keeping taxes higher.",
     "x": -62,
     "y": -56,
     "note": "Parties that put hospitals and schools ahead of tax cuts sit well to the left, and most are socially liberal too.",
@@ -253,7 +253,7 @@
    {
     "tag": "Idea",
     "title": "Civil liberties first",
-    "desc": "Strong limits on state power, even if it makes fighting crime harder.",
+    "desc": "Strong limits on state power, such as protecting privacy, free speech and the rights of suspects, even if that makes fighting crime harder.",
     "x": -33,
     "y": -63,
     "note": "Putting freedoms ahead of security is a libertarian instinct. It leans left because left-wing parties are the ones leading on it today.",
@@ -265,7 +265,7 @@
    {
     "tag": "Idea",
     "title": "Strict immigration limits",
-    "desc": "Tight caps and controls on how many people may enter.",
+    "desc": "Tight caps and controls on who may enter and settle, such as quotas, tougher visa rules and stronger border enforcement.",
     "x": 22,
     "y": 69,
     "note": "The parties pushing hardest for limits are strongly authoritarian, but they come from both sides on the economy. So it sits high up and only slightly right.",
@@ -275,7 +275,7 @@
    {
     "tag": "Idea",
     "title": "Military strength",
-    "desc": "Spending on and support for the armed forces.",
+    "desc": "Spending more on the armed forces and defence, and building up the country's ability to deter and fight.",
     "x": 23,
     "y": 26,
     "note": "Parties that give the armed forces a lot of attention lean right and a little authoritarian.",
@@ -285,7 +285,7 @@
    {
     "tag": "Idea",
     "title": "Deeper international union",
-    "desc": "Countries pool more sovereignty in a shared body.",
+    "desc": "Member countries share more power in a common body, such as a joint budget or common laws, and give up some national control.",
     "x": 3,
     "y": -24,
     "note": "Pooling more power in a shared body is backed by centrist, liberal-leaning parties.",
@@ -295,7 +295,7 @@
    {
     "tag": "Idea",
     "title": "Trade protectionism",
-    "desc": "Tariffs and rules that shield domestic producers.",
+    "desc": "Using tariffs, quotas or subsidies to protect domestic industries and jobs from foreign competition.",
     "x": -11,
     "y": 58,
     "note": "This one splits the middle. Left parties protect jobs and nationalist right parties protect industry, so it lands near the centre line but high on the grid.",
@@ -305,7 +305,7 @@
    {
     "tag": "Idea",
     "title": "Regulated markets",
-    "desc": "Strong government rules on how businesses operate.",
+    "desc": "Strong government rules on business, such as price controls and consumer protections, to steer markets towards public goals.",
     "x": -68,
     "y": -43,
     "note": "Strong rules on business are a left-wing instinct, and the parties behind them are mostly socially liberal.",
@@ -317,7 +317,7 @@
    {
     "tag": "Idea",
     "title": "Anti-militarism",
-    "desc": "Cutting military spending and favouring disarmament and peace.",
+    "desc": "Cutting military spending and weapons, and favouring peace, disarmament and diplomacy over military solutions.",
     "x": -16,
     "y": -12,
     "note": "Parties that stress peace and disarmament lean left and a little liberal.",
@@ -327,7 +327,7 @@
    {
     "tag": "Idea",
     "title": "Traditional morality",
-    "desc": "Law and public life that uphold traditional moral values.",
+    "desc": "Law and public life that uphold traditional family and moral values, for example on marriage, family life and public decency.",
     "x": 39,
     "y": 59,
     "note": "Parties that talk most about traditional values are strongly authoritarian and lean right.",
@@ -337,7 +337,7 @@
    {
     "tag": "Idea",
     "title": "Multiculturalism",
-    "desc": "Different cultures keep their own identities within one society.",
+    "desc": "Different cultural, religious and ethnic groups keep their own traditions and identities within one society, with the state supporting this.",
     "x": -53,
     "y": -62,
     "note": "Parties that welcome many cultures living side by side lean left and liberal.",
@@ -347,7 +347,7 @@
    {
     "tag": "Idea",
     "title": "Anti-establishment politics",
-    "desc": "Attacking elites and the political establishment.",
+    "desc": "Presenting politics as a struggle between ordinary people and the political and economic elite, and promising to challenge it.",
     "x": 7,
     "y": 59,
     "note": "Attacking elites is a populist theme. It sits high on the grid and close to the middle on the economy because both left and right do it.",
@@ -357,7 +357,7 @@
    {
     "tag": "Idea",
     "title": "Free trade",
-    "desc": "Few barriers to buying and selling across borders.",
+    "desc": "Few or no tariffs or quotas, so goods and services can be bought and sold across borders with minimal government interference.",
     "x": 43,
     "y": -36,
     "note": "Open borders for goods and services means fewer state controls, which makes it right-leaning and liberal.",
@@ -369,7 +369,7 @@
    {
     "tag": "Idea",
     "title": "Tough on crime",
-    "desc": "Stronger policing and harsher sentences, even at some cost to civil liberties.",
+    "desc": "Stronger policing and longer sentences to deter crime, even where that limits some individual freedoms or suspects' protections.",
     "x": 23,
     "y": 75,
     "note": "Harsher policing and sentences are pushed by authoritarian parties from across the economic spectrum, so it sits high and only a bit right.",
@@ -379,7 +379,7 @@
    {
     "tag": "Idea",
     "title": "Expanding education",
-    "desc": "More public spending on schools and universities.",
+    "desc": "More public spending on schools, universities and training, such as smaller classes, lower fees or more places.",
     "x": -19,
     "y": -3,
     "note": "Spending more on schools and universities is mildly left, and it's backed from across the spectrum.",
@@ -389,7 +389,7 @@
    {
     "tag": "Idea",
     "title": "Religion in politics",
-    "desc": "Religious principles shape law and public policy.",
+    "desc": "Religious beliefs and institutions help shape laws and public policy, for example on family life, education or moral questions.",
     "x": 13,
     "y": 79,
     "note": "Parties that want faith to shape the law are strongly traditional, so it sits near the top. It has little to say about economics.",
@@ -399,7 +399,7 @@
    {
     "tag": "Idea",
     "title": "International authority over security",
-    "desc": "A union of countries sets shared foreign and defence policy.",
+    "desc": "A union of countries sets shared foreign and defence policy, with common decisions on security instead of each country deciding alone.",
     "x": 3,
     "y": -31,
     "note": "Parties that want a shared foreign and defence policy lean slightly liberal, and they come from all along the economic line.",
@@ -409,7 +409,7 @@
    {
     "tag": "Idea",
     "title": "Government sway over judges",
-    "desc": "Elected governments get a say in judicial decisions and appointments.",
+    "desc": "Elected governments have a say in appointing, promoting or overruling judges, so courts answer more directly to politicians.",
     "x": 15,
     "y": 78,
     "note": "Wanting politicians to have a say over courts is a strongly authoritarian stance, with a mild lean right.",
@@ -421,7 +421,7 @@
    {
     "tag": "Idea",
     "title": "Centralised government",
-    "desc": "Decisions made nationally, with less power for regions.",
+    "desc": "Key decisions are made by the national government, with regions and local authorities following common national rules.",
     "x": 15,
     "y": 78,
     "note": "Parties that want decisions made nationally are strongly authoritarian, with little economic lean.",
@@ -431,7 +431,7 @@
    {
     "tag": "Idea",
     "title": "Growth over environment",
-    "desc": "Economic growth takes priority over environmental protection.",
+    "desc": "Putting economic growth and jobs first, and easing environmental rules where they hold back industry or raise costs.",
     "x": 34,
     "y": 75,
     "note": "Putting the economy first is right-leaning. In practice the parties that do it are also traditional and authoritarian.",
@@ -441,7 +441,7 @@
    {
     "tag": "Idea",
     "title": "Direct democracy",
-    "desc": "Citizens decide big issues by referendum rather than leaving them to representatives.",
+    "desc": "Citizens vote directly on major issues, through referendums or citizen initiatives, instead of leaving them to elected representatives.",
     "x": 5,
     "y": 59,
     "note": "Letting the public decide big questions by referendum is mostly a populist idea. Populists sit high on the grid but all over the economic spectrum.",
@@ -451,7 +451,7 @@
    {
     "tag": "Idea",
     "title": "Cosmopolitanism",
-    "desc": "People are citizens of the world first, and borders matter less.",
+    "desc": "Seeing people as citizens of the world first, and valuing open borders, international cooperation and shared global rules over national interests.",
     "x": -31,
     "y": -65,
     "note": "Seeing yourself as a citizen of the world is a liberal, left-leaning outlook.",
@@ -461,7 +461,7 @@
    {
     "tag": "Idea",
     "title": "Cutting taxes",
-    "desc": "Lowering taxes even if public services receive less money.",
+    "desc": "Lowering income, business or sales taxes, and accepting less government spending as a result.",
     "x": 57,
     "y": 33,
     "note": "Tax cuts are backed by the economic right, often alongside parties that favour traditional values. That pulls it a little way up the grid.",

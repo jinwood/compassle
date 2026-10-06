@@ -6,7 +6,8 @@ import json, random
 cards = json.load(open("public/data/idea-cards.json")) + json.load(open("public/data/manifesto-cards.json"))
 ICONS = json.load(open("scripts/icons_map.json"))  # title -> Lucide icon name (icons live in public/data/icons.json)
 NOTES = json.load(open("scripts/notes.json"))  # friendly reveal text, written by hand
-for c in cards: c["icon"] = ICONS[c["title"]]; c["note"] = NOTES[c["title"]]
+DESCS = json.load(open("scripts/descs.json"))  # one-to-two sentence explanation shown on the card
+for c in cards: c["icon"] = ICONS[c["title"]]; c["note"] = NOTES[c["title"]]; c["desc"] = DESCS[c["title"]]
 T = {c["title"]: c for c in cards}
 PAIRS = [("Wealth redistribution","Self-reliance over welfare"),("Wealth redistribution","Public services first"),("Cutting taxes","Public services first"),
 ("Deregulating markets","Regulated markets"),("Strict immigration limits","Liberal immigration"),("Multiculturalism","Assimilation"),
