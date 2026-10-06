@@ -96,3 +96,20 @@ pre{font-family:var(--mono);font-size:13px;background:var(--panel);border:1px so
 .card h2{grid-column:2;grid-row:2;align-self:start}
 .card p{grid-column:1/-1;grid-row:3}
 .tagline{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+button.ghost{width:auto;font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.08em;padding:6px 10px;background:transparent;color:var(--ink);border:1px solid var(--line);text-transform:uppercase}
+.meta button.ghost{margin-top:8px}
+dialog{background:var(--panel);color:var(--ink);border:2px solid var(--ink);padding:16px;width:min(520px,calc(100vw - 32px));max-height:85vh;overflow:auto}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.dhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.dhead h3{font-family:var(--display);font-weight:900;font-size:1.8rem;text-transform:uppercase;margin:0}
+.dsec{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:16px 0 6px}
+.bar{display:grid;grid-template-columns:64px 1fr 24px;gap:8px;align-items:center;font-family:var(--mono);font-size:12px;margin:4px 0}
+.bar i{display:block;height:10px;background:var(--ink);min-width:2px}
+.game{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+.game .no{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.game .sc{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.idea{display:flex;justify-content:space-between;gap:10px;padding:4px 0;font-size:13px}
+.idea span:last-child{font-family:var(--mono)}
+.dfoot{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.dnote{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:8px}
+.empty{color:var(--muted);font-size:13px}

@@ -1,4 +1,4 @@
-import { clamp, px, py, score, todayStr, puzzleNumber, puzzleFor, shareText, recordDaily } from "./game.js";
+import { clamp, px, py, score, todayStr, puzzleNumber, puzzleFor, shareText, recordDaily, dateForPuzzle, summarise, EMO } from "./game.js";
 
 const $ = s => document.querySelector(s);
 const KEY = "wdis:v1";
@@ -11,8 +11,8 @@ let puzzles, icons = {}, cards, num, daily = true;
 let i = 0, pos = null, locked = false, drag = false, res = [];
 
 function load() {
-  try { return JSON.parse(localStorage.getItem(KEY)) || { results: {}, stats: {} }; }
-  catch (_) { return { results: {}, stats: {} }; }
+  try { return JSON.parse(localStorage.getItem(KEY)) || { results: {}, stats: {}, progress: null }; }
+  catch (_) { return { results: {}, stats: {}, progress: null }; }
 }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (_) {} }
 const put = (el, x, y) => { el.style.left = px(x) + "%"; el.style.top = py(y) + "%"; };
@@ -56,6 +56,7 @@ function lock() {
   const c = cards[i], s = score(c, pos);
   res.push({ title: c.title, gx: pos.x, gy: pos.y, ax: c.x, ay: c.y, d: s.d, pts: s.pts, b: s.b });
   bars[i].dataset.c = s.b; bars[i].className = s.b;
+  if (daily) { store.progress = { num, res: res.map(r => ({ title: r.title, gx: r.gx, gy: r.gy, ax: r.ax, ay: r.ay, d: r.d, pts: r.pts, b: r.b })) }; save(); }
   put(pinAns, c.x, c.y); pinAns.hidden = false;
   link.setAttribute("x1", px(pos.x)); link.setAttribute("y1", py(pos.y)); link.setAttribute("x2", px(c.x)); link.setAttribute("y2", py(c.y));
   link.setAttribute("visibility", "visible");
@@ -75,6 +76,7 @@ function finish(fresh) {
   if (daily && fresh) {
     store.results[num] = res.map(({ title, gx, gy, ax, ay, d, pts, b }) => ({ title, gx, gy, ax, ay, d, pts, b }));
     store.stats = recordDaily(store.stats, num, total);
+    store.progress = null;
     save();
   }
   $("#tot").textContent = total;
@@ -149,5 +151,53 @@ $("#again").addEventListener("click", () => {
   const cs = puzzleFor(puzzles.days, num);
   start(cs, true);
   if (store.results[num]) { res = store.results[num]; finish(false); }
+  else if (store.progress && store.progress.num === num && store.progress.res.length) {
+    res = store.progress.res; i = res.length;
+    res.forEach((r, k) => { bars[k].dataset.c = r.b; });
+    if (i >= cards.length) finish(true); else loadCard();
+  }
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(() => {});
 })();
+
+// ---- Record screen ----
+const dlg = $("#dlg");
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+function renderRecord() {
+  const s = store.stats || {}, sum = summarise(store.results);
+  const avg = s.played ? Math.round(s.totalPts / s.played) : 0;
+  const max = Math.max(1, ...sum.buckets.map(b => b.count));
+  let h = '<div class="stats">' + [["played", s.played || 0], ["streak", s.streak || 0], ["longest", s.maxStreak || s.streak || 0], ["best", s.best || 0]]
+    .map(([k, v]) => "<div><b>" + v + "</b><span>" + k + "</span></div>").join("") + "</div>";
+  if (!sum.games.length) return h + '<p class="empty">No finished games yet. Play today\'s puzzle and it will show up here.</p>';
+  h += '<div class="dsec">Average ' + avg + ' / 500</div>' + sum.buckets.map(b => '<div class="bar"><span>' + b.label + '</span><i style="width:' + (b.count / max * 100) + '%"></i><span>' + b.count + "</span></div>").join("");
+  h += '<div class="dsec">Recent games</div>' + sum.games.slice(0, 14).map(g => '<div class="game"><span class="no">#' + g.n + " · " + esc(dateForPuzzle(puzzles.epoch, g.n)) + "</span><span>" + g.res.map(r => EMO[r.b]).join("") + '</span><span class="sc">' + g.total + "</span></div>").join("");
+  if (sum.games.length >= 2) {
+    const row = i => '<div class="idea"><span>' + esc(i.title) + "</span><span>" + i.avg + " avg</span></div>";
+    h += '<div class="dsec">Your best ideas</div>' + sum.best.map(row).join("") + '<div class="dsec">Hardest for you</div>' + sum.worst.map(row).join("");
+  }
+  return h;
+}
+$("#statsBtn").addEventListener("click", () => { $("#dbody").innerHTML = renderRecord(); $("#dnote").textContent = "Saved on this device only. Export to move it to another."; dlg.showModal(); });
+$("#dclose").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+$("#dexport").addEventListener("click", () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify({ app: "compassle", v: 1, results: store.results, stats: store.stats }, null, 1)], { type: "application/json" }));
+  a.download = "compassle-record.json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
+$("#dimport").addEventListener("click", () => $("#dfile").click());
+$("#dfile").addEventListener("change", async e => {
+  const file = e.target.files[0]; e.target.value = ""; if (!file) return;
+  try {
+    const d = JSON.parse(await file.text());
+    if (d.app !== "compassle" || typeof d.results !== "object" || typeof d.stats !== "object") throw new Error("shape");
+    for (const n in d.results) if (!Array.isArray(d.results[n]) || d.results[n].some(r => typeof r.pts !== "number" || typeof r.title !== "string" || !(r.b in EMO))) throw new Error("rows");
+    if (!confirm("Replace the record on this device with the imported one?")) return;
+    store = { results: d.results, stats: d.stats, progress: null }; save();
+    $("#dbody").innerHTML = renderRecord(); $("#dnote").textContent = "Imported. Reload to see today's state.";
+  } catch (_) { $("#dnote").textContent = "That file isn't a valid Compassle record."; }
+});
+$("#dreset").addEventListener("click", () => {
+  if (!confirm("Delete all saved scores and streaks on this device?")) return;
+  store = { results: {}, stats: {}, progress: null }; save(); $("#dbody").innerHTML = renderRecord(); $("#dnote").textContent = "Reset. Reload to start today's puzzle afresh.";
+});

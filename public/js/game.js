@@ -33,10 +33,31 @@ export function shareText(label, res) {
 
 // stats = {played, streak, best, lastDay, totalPts}. Streak counts consecutive daily puzzles.
 export function recordDaily(stats, n, total) {
-  const s = Object.assign({ played: 0, streak: 0, best: 0, lastDay: 0, totalPts: 0 }, stats);
+  const s = Object.assign({ played: 0, streak: 0, maxStreak: 0, best: 0, lastDay: 0, totalPts: 0 }, stats);
   if (s.lastDay === n) return s;
   s.streak = s.lastDay === n - 1 ? s.streak + 1 : 1;
   s.played++; s.lastDay = n; s.totalPts += total;
   s.best = Math.max(s.best, total);
+  s.maxStreak = Math.max(s.maxStreak || 0, s.streak);
   return s;
+}
+
+// Calendar date (YYYY-MM-DD) of puzzle number n, counted from the epoch date.
+export function dateForPuzzle(epoch, n) {
+  const [y, m, d] = epoch.split("-").map(Number);
+  const t = new Date(Date.UTC(y, m - 1, d + n - 1));
+  return t.getUTCFullYear() + "-" + String(t.getUTCMonth() + 1).padStart(2, "0") + "-" + String(t.getUTCDate()).padStart(2, "0");
+}
+
+// Summarise saved results ({puzzleNumber: [{title, pts, b}]}) for the record screen.
+export function summarise(results) {
+  const games = Object.keys(results).map(Number).sort((a, b) => b - a).map(n => ({
+    n, total: results[n].reduce((a, r) => a + r.pts, 0), res: results[n] }));
+  const buckets = [["0-199", 0, 199], ["200-299", 200, 299], ["300-399", 300, 399], ["400+", 400, 500]]
+    .map(([label, lo, hi]) => ({ label, count: games.filter(g => g.total >= lo && g.total <= hi).length }));
+  const by = {};
+  games.forEach(g => g.res.forEach(r => { (by[r.title] = by[r.title] || []).push(r.pts); }));
+  const ideas = Object.keys(by).map(t => ({ title: t, avg: Math.round(by[t].reduce((a, b) => a + b, 0) / by[t].length), n: by[t].length }))
+    .sort((a, b) => b.avg - a.avg);
+  return { games, buckets, best: ideas.slice(0, 3), worst: ideas.slice(-3).reverse() };
 }
