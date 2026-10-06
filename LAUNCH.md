@@ -33,7 +33,7 @@ The game sends one anonymous record when a daily is finished: puzzle number, tot
 3. Check `"name"` in `wrangler.jsonc` matches your Worker's name in the dashboard exactly. If it differs, a deploy creates a second Worker instead of updating yours.
 4. Commit and push. The git build should run `npx wrangler deploy`. Finish a puzzle on the live site, then in the D1 console run `SELECT COUNT(DISTINCT play) FROM scores;`. `1` means it works.
 5. Optional but recommended: a rate-limit rule on `/api/finish` (Security > WAF > Rate limiting rules, e.g. 20 requests per minute per IP). The endpoint validates its input, but anyone could still flood it with fake scores.
-6. Optional: turn on Cloudflare **Web Analytics** (project > Metrics) for visitors, referrers and countries. If you do, change the about page's "no cookies" line to mention aggregate, cookie-free analytics.
+6. Cloudflare **Web Analytics** is on for compassle.fun (visitors, referrers, countries, devices). The about page's privacy section mentions it. **[done]**
 
 Useful queries (D1 console):
 
