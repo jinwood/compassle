@@ -9,7 +9,8 @@
     "x": -22,
     "y": 4,
     "note": "Estimated from 360 party manifestos (in 58 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "warehouse"
    },
    {
     "tag": "Idea",
@@ -18,7 +19,8 @@
     "x": 55,
     "y": 9,
     "note": "Estimated from the 24 European parties (in 18 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "unlock"
    },
    {
     "tag": "Idea",
@@ -27,7 +29,8 @@
     "x": 65,
     "y": 32,
     "note": "Estimated from the 13 European parties (in 10 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "footprints"
    },
    {
     "tag": "Idea",
@@ -36,7 +39,8 @@
     "x": -23,
     "y": -40,
     "note": "Estimated from the 87 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "landmark"
    },
    {
     "tag": "Idea",
@@ -45,7 +49,8 @@
     "x": -4,
     "y": -19,
     "note": "Estimated from the 32 European parties (in 13 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "search"
    }
   ],
   [
@@ -56,7 +61,8 @@
     "x": -32,
     "y": -56,
     "note": "Estimated from the 68 European parties (in 24 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "venus"
    },
    {
     "tag": "Idea",
@@ -65,7 +71,8 @@
     "x": -67,
     "y": -43,
     "note": "Estimated from the 33 European parties (in 20 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "hand-coins"
    },
    {
     "tag": "Idea",
@@ -74,7 +81,8 @@
     "x": -42,
     "y": -65,
     "note": "Estimated from the 37 European parties (in 21 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "trees"
    },
    {
     "tag": "Idea",
@@ -83,7 +91,8 @@
     "x": 23,
     "y": 72,
     "note": "Estimated from the 69 European parties (in 30 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "merge"
    },
    {
     "tag": "Idea",
@@ -92,7 +101,8 @@
     "x": 18,
     "y": 62,
     "note": "Estimated from the 23 European parties (in 14 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "tractor"
    }
   ],
   [
@@ -103,7 +113,8 @@
     "x": -27,
     "y": -5,
     "note": "Estimated from 360 party manifestos (in 55 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "hammer"
    },
    {
     "tag": "Idea",
@@ -112,7 +123,8 @@
     "x": 11,
     "y": -64,
     "note": "Estimated from the 15 European parties (in 8 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "building-2"
    },
    {
     "tag": "Idea",
@@ -121,7 +133,8 @@
     "x": 4,
     "y": 69,
     "note": "Estimated from the 34 European parties (in 16 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "crown"
    },
    {
     "tag": "Idea",
@@ -130,7 +143,8 @@
     "x": 6,
     "y": -34,
     "note": "Estimated from 360 party manifestos (in 49 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "bird"
    },
    {
     "tag": "Idea",
@@ -139,7 +153,8 @@
     "x": -64,
     "y": -66,
     "note": "Estimated from the 17 European parties (in 12 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "door-open"
    }
   ],
   [
@@ -150,7 +165,8 @@
     "x": 18,
     "y": -9,
     "note": "Estimated from the 90 European parties (in 26 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "plane"
    },
    {
     "tag": "Idea",
@@ -159,7 +175,8 @@
     "x": -20,
     "y": -48,
     "note": "Estimated from the 100 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "heart-handshake"
    },
    {
     "tag": "Idea",
@@ -168,7 +185,8 @@
     "x": -6,
     "y": -27,
     "note": "Estimated from the 130 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "shield-check"
    },
    {
     "tag": "Idea",
@@ -177,7 +195,8 @@
     "x": 15,
     "y": 63,
     "note": "Estimated from the 35 European parties (in 20 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "log-out"
    },
    {
     "tag": "Idea",
@@ -186,7 +205,8 @@
     "x": -37,
     "y": -59,
     "note": "Estimated from the 19 European parties (in 12 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "scale"
    }
   ],
   [
@@ -197,7 +217,8 @@
     "x": 19,
     "y": 75,
     "note": "Estimated from the 60 European parties (in 28 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "flag"
    },
    {
     "tag": "Idea",
@@ -206,7 +227,8 @@
     "x": -25,
     "y": -56,
     "note": "Estimated from the 80 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "rainbow"
    },
    {
     "tag": "Idea",
@@ -215,7 +237,8 @@
     "x": -22,
     "y": -19,
     "note": "Estimated from 360 party manifestos (in 50 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "equal"
    },
    {
     "tag": "Idea",
@@ -224,7 +247,8 @@
     "x": -62,
     "y": -56,
     "note": "Estimated from the 42 European parties (in 22 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "hospital"
    },
    {
     "tag": "Idea",
@@ -233,7 +257,8 @@
     "x": -33,
     "y": -63,
     "note": "Estimated from the 40 European parties (in 20 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "lock-open"
    }
   ],
   [
@@ -244,7 +269,8 @@
     "x": 22,
     "y": 69,
     "note": "Estimated from the 70 European parties (in 30 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "door-closed"
    },
    {
     "tag": "Idea",
@@ -253,7 +279,8 @@
     "x": 23,
     "y": 26,
     "note": "Estimated from 360 party manifestos (in 54 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "swords"
    },
    {
     "tag": "Idea",
@@ -262,7 +289,8 @@
     "x": 3,
     "y": -24,
     "note": "Estimated from the 114 European parties (in 31 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "handshake"
    },
    {
     "tag": "Idea",
@@ -271,7 +299,8 @@
     "x": -11,
     "y": 58,
     "note": "Estimated from the 35 European parties (in 16 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "shield"
    },
    {
     "tag": "Idea",
@@ -280,7 +309,8 @@
     "x": -68,
     "y": -43,
     "note": "Estimated from the 28 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "clipboard-check"
    }
   ],
   [
@@ -291,7 +321,8 @@
     "x": -16,
     "y": -12,
     "note": "Estimated from 360 party manifestos (in 50 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "hand-heart"
    },
    {
     "tag": "Idea",
@@ -300,7 +331,8 @@
     "x": 39,
     "y": 59,
     "note": "Estimated from 360 party manifestos (in 56 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "scroll"
    },
    {
     "tag": "Idea",
@@ -309,7 +341,8 @@
     "x": -53,
     "y": -62,
     "note": "Estimated from the 24 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "users"
    },
    {
     "tag": "Idea",
@@ -318,7 +351,8 @@
     "x": 7,
     "y": 59,
     "note": "Estimated from the 49 European parties (in 26 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "megaphone"
    },
    {
     "tag": "Idea",
@@ -327,7 +361,8 @@
     "x": 43,
     "y": -36,
     "note": "Estimated from the 15 European parties (in 11 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "ship"
    }
   ],
   [
@@ -338,7 +373,8 @@
     "x": 23,
     "y": 75,
     "note": "Estimated from the 55 European parties (in 27 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "siren"
    },
    {
     "tag": "Idea",
@@ -347,7 +383,8 @@
     "x": -19,
     "y": -3,
     "note": "Estimated from 360 party manifestos (in 53 countries, since 2010) that give this idea the most space. Their average left-right and authoritarian-libertarian positions are where the idea is placed. Manifesto emphasis is not the same as support, so treat this as a guide.",
-    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived"
+    "source": "Manifesto Project Dataset 2026a (Lehmann et al.), derived",
+    "icon": "graduation-cap"
    },
    {
     "tag": "Idea",
@@ -356,7 +393,8 @@
     "x": 13,
     "y": 79,
     "note": "Estimated from the 34 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "church"
    },
    {
     "tag": "Idea",
@@ -365,7 +403,8 @@
     "x": 3,
     "y": -31,
     "note": "Estimated from the 24 European parties (in 15 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "badge-alert"
    },
    {
     "tag": "Idea",
@@ -374,7 +413,8 @@
     "x": 15,
     "y": 78,
     "note": "Estimated from the 12 European parties (in 8 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "gavel"
    }
   ],
   [
@@ -385,7 +425,8 @@
     "x": 15,
     "y": 78,
     "note": "Estimated from the 16 European parties (in 11 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "building"
    },
    {
     "tag": "Idea",
@@ -394,7 +435,8 @@
     "x": 34,
     "y": 75,
     "note": "Estimated from the 25 European parties (in 17 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "factory"
    },
    {
     "tag": "Idea",
@@ -403,7 +445,8 @@
     "x": 5,
     "y": 59,
     "note": "Estimated from the 26 European parties (in 14 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "vote"
    },
    {
     "tag": "Idea",
@@ -412,7 +455,8 @@
     "x": -31,
     "y": -65,
     "note": "Estimated from the 40 European parties (in 22 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "globe"
    },
    {
     "tag": "Idea",
@@ -421,7 +465,8 @@
     "x": 57,
     "y": 33,
     "note": "Estimated from the 27 European parties (in 16 countries) that most strongly back this idea. Their average position on the left-right and GAL-TAN scales is where the idea is placed. Parties that back an idea are not the same as the idea itself, so treat this as a guide.",
-    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)"
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025)",
+    "icon": "scissors"
    }
   ]
  ]

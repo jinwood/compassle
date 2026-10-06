@@ -7,7 +7,7 @@ const pad = $("#pad"), pinYou = $("#pinYou"), pinAns = $("#pinAns"), link = $("#
 const bars = [...document.querySelectorAll("#progress i")];
 
 let store = load();
-let puzzles, cards, num, daily = true;
+let puzzles, icons = {}, cards, num, daily = true;
 let i = 0, pos = null, locked = false, drag = false, res = [];
 
 function load() {
@@ -22,6 +22,7 @@ function loadCard() {
   $("#ctag").textContent = (c.country ? c.country + " · " : "") + c.tag + " · " + (i + 1) + " of " + cards.length;
   $("#ctitle").textContent = c.title;
   $("#cdesc").textContent = c.desc;
+  $("#cicon").innerHTML = icons[c.icon] ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + icons[c.icon] + "</svg>" : "";
   pos = null; locked = false;
   pinYou.hidden = true; pinAns.hidden = true; hint.style.display = "flex";
   link.setAttribute("visibility", "hidden");
@@ -140,6 +141,7 @@ $("#again").addEventListener("click", () => {
 (async function init() {
   try {
     puzzles = await (await fetch("/data/puzzles.json")).json();
+    try { icons = await (await fetch("/data/icons.json")).json(); } catch (_) {}
   } catch (_) {
     $("#ctitle").textContent = "Couldn't load today's puzzle"; $("#cdesc").textContent = "Check your connection and reload."; return;
   }
