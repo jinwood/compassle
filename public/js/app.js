@@ -29,6 +29,7 @@ function loadCard() {
   reveal.hidden = true;
   go.disabled = true; go.textContent = "Lock it in";
   bars.forEach((b, k) => { b.className = k < i ? (b.dataset.c || "") : (k === i ? "cur" : ""); });
+  if (i > 0 && scrollY > 0) window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function setPos(x, y) {
