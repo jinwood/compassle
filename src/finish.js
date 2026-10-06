@@ -1,11 +1,12 @@
-// POST /api/finish: records one finished daily game. No IP, cookie or user id is stored.
+// Records one finished daily game. No IP, cookie or user id is stored.
 // Body: {"day": 12, "total": 310, "cards": [{"t": "Free trade", "p": 64}, ... 5 items]}
-// Needs a D1 binding named DB (see schema.sql and LAUNCH.md).
+// Needs a D1 binding named DB (declared in wrangler.jsonc; table in schema.sql).
 const json = (o, status = 200) =>
   new Response(JSON.stringify(o), { status, headers: { "content-type": "application/json", "cache-control": "no-store" } });
 const isInt = (v, lo, hi) => Number.isInteger(v) && v >= lo && v <= hi;
 
-export async function onRequestPost({ request, env }) {
+export async function handleFinish(request, env) {
+  if (request.method !== "POST") return json({ error: "method" }, 405);
   const origin = request.headers.get("origin");
   try { if (origin && new URL(origin).host !== new URL(request.url).host) return json({ error: "origin" }, 403); }
   catch (_) { return json({ error: "origin" }, 403); }
@@ -28,5 +29,3 @@ export async function onRequestPost({ request, env }) {
   await env.DB.batch(d.cards.map((c, i) => stmt.bind(play, ts, d.day, sum, i, c.t, c.p)));
   return json({ ok: true }, 201);
 }
-
-export const onRequest = () => json({ error: "method" }, 405);
