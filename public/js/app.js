@@ -148,6 +148,12 @@ $("#again").addEventListener("click", () => {
     $("#ctitle").textContent = "Couldn't load today's puzzle"; $("#cdesc").textContent = "Check your connection and reload."; return;
   }
   num = puzzleNumber(puzzles.epoch, todayStr());
+  const peek = parseInt(new URLSearchParams(location.search).get("day"), 10);
+  if (peek > 0) { // ?day=N previews any day without touching saved results
+    start(puzzleFor(puzzles.days, peek), false);
+    $("#meta").innerHTML = "PREVIEW<br>DAY " + peek;
+    return;
+  }
   const cs = puzzleFor(puzzles.days, num);
   start(cs, true);
   if (store.results[num]) { res = store.results[num]; finish(false); }

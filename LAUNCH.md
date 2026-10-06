@@ -9,7 +9,7 @@ Status key: **[done]** finished, **[you]** needs you, **[open]** not started or 
 
 2. **Confirm the data terms** **[you]**
    - **CHES:** the site shows no licence. Email them (draft below) and wait for a reply.
-   - **Manifesto Project:** the terms say the data is for "scientific research" and forbid redistribution without written authorisation. Only derived numbers are published, but the commercial-use position is unclear. Email them (draft below). If you don't hear back, remove the 8 manifesto cards before launch (`Military strength`, `Anti-militarism`, `Nationalisation`, `Expanding education`, `Traditional morality`, `Equality`, `Trade unions`, `Human rights and freedoms`). That leaves 41 cards, or 8 days.
+   - **Manifesto Project:** the terms (re-read in full) say the data is provided "for the purposes of scientific research", forbid redistribution without written authorisation, and require a citation and a copy of any published work. They say nothing about commercial use or derived results. Only derived numbers are published, so this is probably fine, but ask: `manifesto-communication@wzb.eu` (draft below). If you don't hear back, remove the 8 manifesto cards before launch (`Military strength`, `Anti-militarism`, `Nationalisation`, `Expanding education`, `Traditional morality`, `Equality`, `Trade unions`, `Human rights and freedoms`). That leaves 41 cards, or 8 days.
    - The raw Manifesto file is git-ignored and was never committed.
 
 3. **Credit the sources on the site** **[done]**
@@ -47,10 +47,14 @@ Status key: **[done]** finished, **[you]** needs you, **[open]** not started or 
 >
 > Hello, I'm building Compassle, a free daily game in which players place political ideas on a left-right / libertarian-authoritarian grid. For each idea I estimate a position by averaging the CHES 2024 positions of the parties that most strongly back it (using the issue variables). Only these derived numbers are published, together with a visible citation to Rovny et al. (2025). I don't redistribute the dataset itself, although the CSV is in the project's public repository for reproducibility. Could you confirm whether this use is acceptable, and say if you'd prefer I remove the CSV from the repo? Thank you.
 
-**To the Manifesto Project** (contact is on manifesto-project.wzb.eu):
+**To the Manifesto Project** (send to `manifesto-communication@wzb.eu`, the contact in the footer of manifesto-project.wzb.eu; the bibliography address is only for sending them citations):
 
 > Subject: Use of MPDS 2026a in a free, non-commercial web game
 >
 > Hello, I'm building Compassle, a free, non-commercial daily web game in which players place political ideas on a two-dimensional grid and see how close they got to a reference position. For eight ideas I estimate the reference position as the emphasis-weighted average of manifesto positions (RILE plus an index built from per-category shares) for manifestos since 2010. Only these derived numbers appear on the site, with a visible citation to the Manifesto Data Collection, Version 2026a. I do not redistribute the dataset or any manifesto text. Is this use permitted? I'm also happy to send you the citation, as your terms of use request. Thank you.
 
 (Only keep the "free, non-commercial" wording if it's true.)
+
+## Handy
+
+`/?day=N` previews day N without touching your saved record (for example `/?day=7` opens with Anti-militarism). Manifesto cards are on days 1, 3, 5, 6, 7 and 8.
