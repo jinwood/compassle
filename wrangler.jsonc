@@ -6,9 +6,13 @@
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": ["/api/*"],
   },
   "d1_databases": [
-    { "binding": "DB", "database_name": "compassle", "database_id": "REPLACE_WITH_DATABASE_ID" }
-  ]
+    {
+      "binding": "DB",
+      "database_name": "compassle",
+      "database_id": "4c0c589b-0c45-4e0a-9862-7b217d55c0dc",
+    },
+  ],
 }
