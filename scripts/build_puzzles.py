@@ -4,7 +4,7 @@ Days already in puzzles.json keep their cards (they may be live); only cards not
 Usage: python3 -I scripts/build_puzzles.py   (run from the repo root)"""
 import json, random
 
-cards = json.load(open("public/data/idea-cards.json")) + json.load(open("public/data/manifesto-cards.json"))
+cards = json.load(open("public/data/idea-cards.json")) + json.load(open("public/data/manifesto-cards.json")) + json.load(open("public/data/gps-cards.json"))
 ICONS = json.load(open("scripts/icons_map.json"))  # title -> Lucide icon name (icons live in public/data/icons.json)
 NOTES = json.load(open("scripts/notes.json"))  # friendly reveal text, written by hand
 DESCS = json.load(open("scripts/descs.json"))  # one-to-two sentence explanation shown on the card
@@ -23,7 +23,12 @@ PAIRS = [("Wealth redistribution","Self-reliance over welfare"),("Wealth redistr
 ("Equality","Wealth redistribution"),("Trade unions","Wealth redistribution"),("Traditional morality","Religion in politics"),("Traditional morality","Secular government"),
 ("Standing up to Russia","Accommodating Russia"),("Immigration as top priority","Strict immigration limits"),("Immigration as top priority","Liberal immigration"),
 ("Climate as top priority","Climate policy over growth"),("Climate as top priority","Environment over growth"),("Redistribution as top priority","Wealth redistribution"),
-("Europe as top priority","Deeper international union"),("Europe as top priority","Leaving international unions")]
+("Europe as top priority","Deeper international union"),("Europe as top priority","Leaving international unions"),
+("Populism","Anti-establishment politics"),("Populism","Direct democracy"),("Patronage politics","Fighting corruption"),("Undermining democratic norms","Independent judiciary"),
+("Undermining democratic norms","Limits on leaders"),("Conservatism","Traditional morality"),("Social democracy","Public services first"),("Social democracy","Wealth redistribution"),
+("Green politics","Environment over growth"),("Green politics","Climate policy over growth"),("Green politics","Climate as top priority"),("Christian democracy","Religion in politics"),
+("Radical right","Nationalism"),("Radical right","Strict immigration limits"),("Radical right","Immigration as top priority"),("Liberalism","Civil liberties first"),
+("Socialism","Wealth redistribution"),("Socialism","Nationalisation")]
 assert all(a in T and b in T for a, b in PAIRS), "unknown title in PAIRS"
 BAD = {frozenset(p) for p in PAIRS}
 p = json.load(open("public/data/puzzles.json"))

@@ -1,0 +1,92 @@
+[
+ {
+  "title": "Populism",
+  "desc": "Politics that sets 'the people' against a corrupt elite, and says the people's will should decide.",
+  "tag": "Idea",
+  "x": -1,
+  "y": 48,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 187 parties in 104 countries"
+ },
+ {
+  "title": "Patronage politics",
+  "desc": "Handing out jobs, projects and benefits mainly to your own supporters.",
+  "tag": "Idea",
+  "x": 7,
+  "y": 45,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 205 parties in 87 countries"
+ },
+ {
+  "title": "Undermining democratic norms",
+  "desc": "Weakening the courts, the press or the opposition in order to hold on to power.",
+  "tag": "Idea",
+  "x": -2,
+  "y": 61,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 112 parties in 77 countries"
+ },
+ {
+  "title": "Conservatism",
+  "desc": "Preserving established institutions and traditions, with change coming slowly.",
+  "tag": "Idea",
+  "x": 37,
+  "y": 38,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 42 parties in 28 countries"
+ },
+ {
+  "title": "Social democracy",
+  "desc": "A market economy with strong unions, a generous welfare state and public services.",
+  "tag": "Idea",
+  "x": -30,
+  "y": -30,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 41 parties in 31 countries"
+ },
+ {
+  "title": "Liberalism",
+  "desc": "Individual freedom and the rule of law, with limited government.",
+  "tag": "Idea",
+  "x": 27,
+  "y": -18,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 32 parties in 23 countries"
+ },
+ {
+  "title": "Socialism",
+  "desc": "Common ownership and a far bigger role for the state in the economy.",
+  "tag": "Idea",
+  "x": -64,
+  "y": -49,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 19 parties in 16 countries"
+ },
+ {
+  "title": "Green politics",
+  "desc": "Putting ecology first, alongside social justice and grassroots democracy.",
+  "tag": "Idea",
+  "x": -45,
+  "y": -63,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 14 parties in 14 countries"
+ },
+ {
+  "title": "Christian democracy",
+  "desc": "Politics built on Christian social teaching: family, community and moderate welfare.",
+  "tag": "Idea",
+  "x": 29,
+  "y": 50,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 14 parties in 12 countries"
+ },
+ {
+  "title": "Radical right",
+  "desc": "Nativist, nationalist politics that is hostile to immigration and the liberal establishment.",
+  "tag": "Idea",
+  "x": 13,
+  "y": 58,
+  "note": "",
+  "source": "Global Party Survey 2019 (Norris), derived · 21 parties in 20 countries"
+ }
+]

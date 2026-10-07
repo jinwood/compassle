@@ -53,5 +53,15 @@
  "Immigration as top priority": "signpost",
  "Climate as top priority": "flame",
  "Redistribution as top priority": "piggy-bank",
- "Europe as top priority": "star"
+ "Europe as top priority": "star",
+ "Populism": "speech",
+ "Patronage politics": "gift",
+ "Undermining democratic norms": "shield-off",
+ "Conservatism": "anchor",
+ "Social democracy": "heart",
+ "Liberalism": "key-round",
+ "Socialism": "hand-helping",
+ "Green politics": "sprout",
+ "Christian democracy": "cross",
+ "Radical right": "fence"
 }

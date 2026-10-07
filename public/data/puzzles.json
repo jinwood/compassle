@@ -572,6 +572,110 @@
     "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 51 parties in 28 countries",
     "icon": "signpost"
    }
+  ],
+  [
+   {
+    "title": "Green politics",
+    "desc": "Putting the protection of the environment first, together with social justice, peace and decisions made close to the people affected.",
+    "tag": "Idea",
+    "x": -45,
+    "y": -63,
+    "note": "Green parties are strongly left and the most libertarian of the families, which puts them in the bottom-left corner.",
+    "source": "Global Party Survey 2019 (Norris), derived · 14 parties in 14 countries",
+    "icon": "sprout"
+   },
+   {
+    "title": "Christian democracy",
+    "desc": "Politics based on Christian social teaching: support for the family, local community and a welfare state, with a moderate approach to the economy.",
+    "tag": "Idea",
+    "x": 29,
+    "y": 50,
+    "note": "Christian democratic parties back a market economy with a welfare safety net, and hold traditional views on family and morality. That makes them right of centre and fairly authoritarian.",
+    "source": "Global Party Survey 2019 (Norris), derived · 14 parties in 12 countries",
+    "icon": "cross"
+   },
+   {
+    "title": "Patronage politics",
+    "desc": "Giving jobs, contracts and benefits mainly to a party's own supporters and voters, instead of sharing them out equally among all citizens.",
+    "tag": "Idea",
+    "x": 7,
+    "y": 45,
+    "note": "Parties that reward their own supporters are found across the economic spectrum, so this is near the middle horizontally. It sits well up the grid because these parties are mostly socially conservative.",
+    "source": "Global Party Survey 2019 (Norris), derived · 205 parties in 87 countries",
+    "icon": "gift"
+   },
+   {
+    "title": "Liberalism",
+    "desc": "Putting individual freedom first: free speech, the rule of law, open markets and limits on what government can do to people.",
+    "tag": "Idea",
+    "x": 27,
+    "y": -18,
+    "note": "Liberal parties favour personal freedom and are a little right of centre on the economy. They sit in the libertarian half of the grid.",
+    "source": "Global Party Survey 2019 (Norris), derived · 32 parties in 23 countries",
+    "icon": "key-round"
+   },
+   {
+    "title": "Conservatism",
+    "desc": "Valuing established institutions, tradition and gradual change over rapid reform, usually with a preference for lower taxes and a smaller state.",
+    "tag": "Idea",
+    "x": 37,
+    "y": 38,
+    "note": "Conservative parties combine a market-friendly economy with traditional social values, which puts them in the upper right.",
+    "source": "Global Party Survey 2019 (Norris), derived · 42 parties in 28 countries",
+    "icon": "anchor"
+   }
+  ],
+  [
+   {
+    "title": "Social democracy",
+    "desc": "Keeping a market economy but using strong unions, taxes and public services to reduce inequality and give everyone a social safety net.",
+    "tag": "Idea",
+    "x": -30,
+    "y": -30,
+    "note": "Social democratic parties want a bigger state and a stronger welfare system, and are mostly socially liberal. That puts them left of centre and a little below the middle.",
+    "source": "Global Party Survey 2019 (Norris), derived · 41 parties in 31 countries",
+    "icon": "heart"
+   },
+   {
+    "title": "Undermining democratic norms",
+    "desc": "Weakening checks on power, such as independent courts, a free press and a fair opposition, so that the governing party is harder to remove.",
+    "tag": "Idea",
+    "x": -2,
+    "y": 61,
+    "note": "Parties that experts say weaken courts, media and opposition are some of the most authoritarian in the survey. They are spread evenly between economic left and right.",
+    "source": "Global Party Survey 2019 (Norris), derived · 112 parties in 77 countries",
+    "icon": "shield-off"
+   },
+   {
+    "title": "Populism",
+    "desc": "A style of politics that casts the 'pure people' against a corrupt elite and claims to speak for the people's will. Populists exist on both the left and the right.",
+    "tag": "Idea",
+    "x": -1,
+    "y": 48,
+    "note": "Populist parties come from both left and right, so on average this lands about level horizontally. What they share is a style that treats elites as the enemy, which lifts it into the authoritarian half.",
+    "source": "Global Party Survey 2019 (Norris), derived · 187 parties in 104 countries",
+    "icon": "speech"
+   },
+   {
+    "title": "Radical right",
+    "desc": "Nativist and nationalist politics that wants far less immigration, defends a traditional national culture and distrusts the liberal establishment.",
+    "tag": "Idea",
+    "x": 13,
+    "y": 58,
+    "note": "Radical right parties are strongly authoritarian but only mildly right on economics, and many support the welfare state, so they sit near the top but not far right.",
+    "source": "Global Party Survey 2019 (Norris), derived · 21 parties in 20 countries",
+    "icon": "fence"
+   },
+   {
+    "title": "Socialism",
+    "desc": "Common or public ownership of key industries and a far larger role for the state in the economy, in pursuit of equality.",
+    "tag": "Idea",
+    "x": -64,
+    "y": -49,
+    "note": "The socialist and communist parties are the furthest left of the families here, and tend to be socially liberal too.",
+    "source": "Global Party Survey 2019 (Norris), derived · 19 parties in 16 countries",
+    "icon": "hand-helping"
+   }
   ]
  ]
 }

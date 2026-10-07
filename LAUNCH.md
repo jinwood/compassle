@@ -48,7 +48,7 @@ Not done: a way to show "average score today" in the game. The data supports it 
 
 - **Day rollover uses each player's local date.** Someone in Sydney gets tomorrow's puzzle hours before someone in Los Angeles, and share-text numbers can differ across timezones. Switching to UTC keeps everyone in sync, but the puzzle then flips at an odd local time for some players. Small change: `todayStr()` in `public/js/game.js`. **[open]**
 - **The answers are visible.** The site is static, so anyone can read every position in the network tab, including future days. Fine for a casual game. Fixing it needs a small Cloudflare Worker that serves only today's cards. **[open]**
-- **Content runway.** 55 cards make 11 days, then it repeats. Aim for 3 to 4 weeks before announcing widely. Cheapest source: hand-written cards labelled as editorial estimates. **[open]**
+- **Content runway.** 65 cards make 13 days, then it repeats. Aim for 3 to 4 weeks before announcing widely. Cheapest source: hand-written cards labelled as editorial estimates. **[open]**
 - **Fairness check.** Show it to a few friends from different political leanings. If the same cards annoy people on both sides, the placements are probably fine. If only one side objects, look again. Also see whether scoring feels too generous, since averaging pulls positions toward the middle. **[you]**
 - **Custom domain, redirects and a 404 page** on Cloudflare Pages. **[you]**
 
