@@ -468,6 +468,110 @@
     "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 27 parties in 16 countries",
     "icon": "scissors"
    }
+  ],
+  [
+   {
+    "tag": "Idea",
+    "title": "Climate as top priority",
+    "desc": "Making climate change the central issue of a party's campaign, ahead of other topics such as the economy or health.",
+    "x": -34,
+    "y": -58,
+    "note": "Parties that put climate first are the Greens and their allies: clearly left and among the most libertarian on the grid.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 30 parties in 20 countries",
+    "icon": "flame"
+   },
+   {
+    "tag": "Idea",
+    "title": "Redistribution as top priority",
+    "desc": "Making the question of how much money the state moves from rich to poor the central issue of a party's campaign.",
+    "x": -54,
+    "y": -35,
+    "note": "Putting inequality at the centre of politics is a left-wing habit, and the parties that do it are mostly socially liberal too.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 36 parties in 21 countries",
+    "icon": "piggy-bank"
+   },
+   {
+    "tag": "Idea",
+    "title": "Accommodating Russia",
+    "desc": "Favouring talks and better relations with Russia, and opposing sanctions or weapons for Ukraine, so that tensions ease.",
+    "x": -27,
+    "y": 32,
+    "note": "Parties that want warmer ties with Moscow are mostly authoritarian, and many of them lean left on the economy, which puts this up and to the left.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 28 parties in 14 countries",
+    "icon": "messages-square"
+   },
+   {
+    "tag": "Idea",
+    "title": "Representative democracy",
+    "desc": "Elected representatives, not public referendums, make the main decisions on voters' behalf, weighing evidence and compromise.",
+    "x": 18,
+    "y": -1,
+    "note": "Leaving big decisions to elected officials is the established view, so it sits close to the centre.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 28 parties in 10 countries",
+    "icon": "user-check"
+   },
+   {
+    "tag": "Idea",
+    "title": "Ethnic minority rights",
+    "desc": "Extra legal protection and support for ethnic minority groups, such as anti-discrimination law, language rights or fair representation.",
+    "x": -40,
+    "y": -46,
+    "note": "Extra protections for minorities are backed by left-leaning, socially liberal parties.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 50 parties in 24 countries",
+    "icon": "users-round"
+   }
+  ],
+  [
+   {
+    "tag": "Idea",
+    "title": "Climate policy over growth",
+    "desc": "Cutting emissions through measures like carbon pricing and clean-energy rules, even if it slows economic growth or raises costs.",
+    "x": -31,
+    "y": -67,
+    "note": "Parties willing to accept slower growth for lower emissions lean left and liberal.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 38 parties in 21 countries",
+    "icon": "thermometer"
+   },
+   {
+    "tag": "Idea",
+    "title": "Standing up to Russia",
+    "desc": "Supporting sanctions on Russia, military and financial help for Ukraine, and a firm line against Russian influence in Europe.",
+    "x": 20,
+    "y": -7,
+    "note": "Backing sanctions and support for Ukraine cuts across the usual divides. Its supporters sit just right of centre and slightly libertarian.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 65 parties in 21 countries",
+    "icon": "shield-alert"
+   },
+   {
+    "tag": "Idea",
+    "title": "Devolving power",
+    "desc": "Moving decisions from the national government to regions and local authorities, such as over taxes, schools or policing.",
+    "x": -7,
+    "y": -11,
+    "note": "Giving regions more say appeals to all kinds of parties, so it ends up close to the centre.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 27 parties in 12 countries",
+    "icon": "split"
+   },
+   {
+    "tag": "Idea",
+    "title": "Europe as top priority",
+    "desc": "Making the EU and a country's place in it the central issue of a party's campaign, whether for or against.",
+    "x": 12,
+    "y": -19,
+    "note": "Parties that talk most about the EU come from both sides, strong supporters and strong opponents, so they average out close to the middle.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 25 parties in 14 countries",
+    "icon": "star"
+   },
+   {
+    "tag": "Idea",
+    "title": "Immigration as top priority",
+    "desc": "Making immigration the central issue of a party's campaign, ahead of other topics such as the economy or health.",
+    "x": 29,
+    "y": 70,
+    "note": "The parties that campaign hardest on immigration are overwhelmingly authoritarian, so this sits near the top of the grid, a little right of centre.",
+    "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 51 parties in 28 countries",
+    "icon": "signpost"
+   }
   ]
  ]
 }

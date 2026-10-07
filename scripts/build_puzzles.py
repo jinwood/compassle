@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Pack idea cards from all sources into daily sets of 5 (seeded shuffle, no opposing pair on one day).
+Days already in puzzles.json keep their cards (they may be live); only cards not yet scheduled are packed into new days appended after them.
 Usage: python3 -I scripts/build_puzzles.py   (run from the repo root)"""
 import json, random
 
@@ -19,12 +20,18 @@ PAIRS = [("Wealth redistribution","Self-reliance over welfare"),("Wealth redistr
 ("Devolving power","Centralised government"),("LGBTQ+ rights","Same-sex marriage"),("Free movement across borders","Strict immigration limits"),
 ("Free movement across borders","Liberal immigration"),("Free movement across borders","Deeper international union"),("Anti-establishment politics","Direct democracy"),
 ("Nationalism","Leaving international unions"),("Military strength","Anti-militarism"),("Human rights and freedoms","Civil liberties first"),
-("Equality","Wealth redistribution"),("Trade unions","Wealth redistribution"),("Traditional morality","Religion in politics"),("Traditional morality","Secular government")]
+("Equality","Wealth redistribution"),("Trade unions","Wealth redistribution"),("Traditional morality","Religion in politics"),("Traditional morality","Secular government"),
+("Standing up to Russia","Accommodating Russia"),("Immigration as top priority","Strict immigration limits"),("Immigration as top priority","Liberal immigration"),
+("Climate as top priority","Climate policy over growth"),("Climate as top priority","Environment over growth"),("Redistribution as top priority","Wealth redistribution"),
+("Europe as top priority","Deeper international union"),("Europe as top priority","Leaving international unions")]
 assert all(a in T and b in T for a, b in PAIRS), "unknown title in PAIRS"
 BAD = {frozenset(p) for p in PAIRS}
-N = len(T) // 5
+p = json.load(open("public/data/puzzles.json"))
+kept = [[c["title"] for c in d] for d in p["days"]]
+left = [t for t in T if t not in {t for d in kept for t in d}]
+N = len(left) // 5
 for seed in range(10000):
-    ts = list(T); random.Random(seed).shuffle(ts); days, pool = [], ts
+    ts = list(left); random.Random(seed).shuffle(ts); days, pool = [], ts
     for _ in range(N):
         d = []
         for t in pool:
@@ -34,6 +41,7 @@ for seed in range(10000):
         days.append(d); pool = [t for t in pool if t not in d]
     if len(days) == N: break
 else: raise SystemExit("no packing found")
-p = json.load(open("public/data/puzzles.json")); p["days"] = [[T[t] for t in d] for d in days]
+days = kept + days
+p["days"] = [[T[t] for t in d] for d in days]
 json.dump(p, open("public/data/puzzles.json", "w"), indent=1, ensure_ascii=False)
-print(len(T), "cards ->", N, "days; unused:", pool)
+print(len(T), "cards ->", len(days), "days; unused:", pool)

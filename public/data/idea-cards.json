@@ -367,5 +367,59 @@
   "y": 63,
   "note": "",
   "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 35 parties in 20 countries"
+ },
+ {
+  "tag": "Idea",
+  "title": "Standing up to Russia",
+  "desc": "Taking a tough line on Russia, including sanctions and support for Ukraine.",
+  "x": 20,
+  "y": -7,
+  "note": "",
+  "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 65 parties in 21 countries"
+ },
+ {
+  "tag": "Idea",
+  "title": "Accommodating Russia",
+  "desc": "Easing tensions with Russia through talks, even if sanctions end.",
+  "x": -27,
+  "y": 32,
+  "note": "",
+  "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 28 parties in 14 countries"
+ },
+ {
+  "tag": "Idea",
+  "title": "Immigration as top priority",
+  "desc": "Treating immigration as the issue that matters most in politics.",
+  "x": 29,
+  "y": 70,
+  "note": "",
+  "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 51 parties in 28 countries"
+ },
+ {
+  "tag": "Idea",
+  "title": "Climate as top priority",
+  "desc": "Treating climate change as the issue that matters most in politics.",
+  "x": -34,
+  "y": -58,
+  "note": "",
+  "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 30 parties in 20 countries"
+ },
+ {
+  "tag": "Idea",
+  "title": "Redistribution as top priority",
+  "desc": "Treating inequality and who gets what as the issue that matters most.",
+  "x": -54,
+  "y": -35,
+  "note": "",
+  "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 36 parties in 21 countries"
+ },
+ {
+  "tag": "Idea",
+  "title": "Europe as top priority",
+  "desc": "Treating the EU as the issue that matters most in politics.",
+  "x": 12,
+  "y": -19,
+  "note": "",
+  "source": "CHES 2024 issue scores, derived (Rovny et al. 2025) · 25 parties in 14 countries"
  }
 ]

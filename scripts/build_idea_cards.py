@@ -52,6 +52,12 @@ IDEAS = [
  ("Free movement across borders", "Goods, services, capital and workers move freely between member countries.", "eu_intmark", "H", (1, 7)),
  ("Deeper international union", "Countries pool more sovereignty in a shared body.", "eu_position", "H", (1, 7)),
  ("Leaving international unions", "Countries take back powers from shared bodies.", "eu_position", "L", (1, 7)),
+ ("Standing up to Russia", "Taking a tough line on Russia, including sanctions and support for Ukraine.", "eu_russia", "L"),
+ ("Accommodating Russia", "Easing tensions with Russia through talks, even if sanctions end.", "eu_russia", "H"),
+ ("Immigration as top priority", "Treating immigration as the issue that matters most in politics.", "immigrate_salience", "H"),
+ ("Climate as top priority", "Treating climate change as the issue that matters most in politics.", "climate_change_salience", "H"),
+ ("Redistribution as top priority", "Treating inequality and who gets what as the issue that matters most.", "redist_salience", "H"),
+ ("Europe as top priority", "Treating the EU as the issue that matters most in politics.", "eu_salience", "H"),
 ]
 
 rows = [r for r in csv.DictReader(open(sys.argv[1], encoding="utf-8-sig")) if r["lrecon"] and r["galtan"]]
